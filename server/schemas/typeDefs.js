@@ -68,7 +68,6 @@ const typeDefs = `
     addOrder(vinyl: [ID]!): Order
     addVinyl(vinyl: vinylInput)
     updateUser(firstName: String, lastName: String, email: String, password: String): User
-    updatevinyl(_id: ID!, quantity: Int!): vinyl
     login(email: String!, password: String!): Auth
   }
 `;
