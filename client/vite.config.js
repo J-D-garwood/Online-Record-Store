@@ -15,4 +15,5 @@ export default defineConfig({
       },
     },
   },
+  //test: {}, -> maybe add 'test' property
 });
