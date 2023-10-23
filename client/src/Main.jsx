@@ -3,7 +3,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx';
-import Home from './pages/Homepage';
+import Homepage from './pages/Homepage';
 import Detail from './pages/Detail';
 import AddListing from './pages/AddListing';
 import Login from './pages/Login';
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Home />
+                element: <Homepage />
             }, {
                 path: '/login',
                 element: <Login />

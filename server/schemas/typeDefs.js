@@ -67,9 +67,8 @@ const typeDefs = `
     addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
     addOrder(vinyl: [ID]!): Order
     addVinyl(vinyl: vinylInput)
-    updateUser(firstName: String, lastName: String, email: String, password: String): User
     login(email: String!, password: String!): Auth
   }
 `;
-
+//maybe add update functionality to mutations
 module.exports = typeDefs;
