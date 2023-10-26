@@ -50,7 +50,7 @@ db.once("open", async () => {
         "Yellow Submarine was the tenth studio album by the Beatles, originally released on 13 January 1969 in the United States and on 17 January 1969 in the United Kingdom.",
       // image: "cookie-tin.jpg",
       price: 53.99,
-      trackList:
+      tracklist:
         "1. Yellow Submarine, 2. Only A Northern Song, 3. All Together Now, 4. Hey Bulldog, 5. It's All Too Much, 6. All You Need Is Love, 7. Pepperland, 8. Sea Of Time, 9. Sea Of Holes, 10. Sea Of Monsters, 11. March Of The Meanies, 12. Pepperland Laid Waste, 13. Yellow Submarine In Pepperland",
       genre: "Rock",
       //listingDate: "10/10/2023",
@@ -63,7 +63,7 @@ db.once("open", async () => {
         "UMR/Mercury are pressing 11 of Metallica's studio album back catalogue on custom coloured vinyl for the first time for World ex North America.",
       // image: "cookie-tin.jpg",
       price: 88.99,
-      trackList:
+      tracklist:
         "1. Battery, 2. Master Of Puppets, 3. The Thing That Should Not Be, 4. Welcome Home (Sanitarium), 5. Disposable Heroes, 6. Leper Messiah, 7. Orion, Damage Inc.",
       genre: "Metal",
       //listingDate: "01/10/2023",
@@ -76,7 +76,7 @@ db.once("open", async () => {
         "13 Songs, Unique moonstone blue marbled color disc, Collectible album sleeve (each side features a different full-size photo of Taylor), Full-size gatefold photo",
       // image: "cookie-tin.jpg",
       price: 59.99,
-      trackList:
+      tracklist:
         "SIDE A 1. Lavender Haze, 2. Maroon, 3. Anti-Hero, 4. Snow On The Beach, 5. You're On Your Own, Kid, 6. Midnight Rain",
       genre: "Pop",
       //listingDate: "30/09/2023",

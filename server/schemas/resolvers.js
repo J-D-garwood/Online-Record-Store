@@ -49,6 +49,18 @@ const resolvers = {
     vinyl: async (parent, { _id }) => {
       return await Vinyl.findById(_id);
     },
+    // order: async (parent, { _id }, context) => {
+    //   if (context.user) {
+    //     const user = await User.findById(context.user._id).populate({
+    //       path: 'orders.products',
+    //       populate: 'category'
+    //     });
+
+    //     return user.orders.id(_id);
+    //   }
+
+    //   throw AuthenticationError;
+    // },
     /*
 
     checkout: async (parent, { vinyls }) => {
@@ -143,54 +155,54 @@ const resolvers = {
     //   return { session: session.id };
     // },
   },
-  // Mutation: {
-  //   // Resolver for adding a new user
-  //   // addUser: async (parent, args) => {
-  //   //   const user = await User.create(args);
-  //   //   const token = signToken(user);
+  Mutation: {
+    // Resolver for adding a new user
+    addUser: async (parent, args) => {
+      const user = await User.create(args);
+      const token = signToken(user);
 
-  //   //   return { token, user };
-  //   // },
-  //   // // Resolver for creating a new order with selected vinyls
-  //   // addOrder: async (parent, { vinyls }, context) => {
-  //   //   if (context.user) {
-  //   //     const order = new Order({ vinyls });
+      return { token, user };
+    },
+    // // Resolver for creating a new order with selected vinyls
+    // addOrder: async (parent, { vinyls }, context) => {
+    //   if (context.user) {
+    //     const order = new Order({ vinyls });
 
-  //   //     await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
+    //     await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
 
-  //   //     return order;
-  //   //   }
+    //     return order;
+    //   }
 
-  //   //   throw AuthenticationError;
-  //   // },
-  //   // // Resolver for updating user information if authenticated
-  //   // updateUser: async (parent, args, context) => {
-  //   //   if (context.user) {
-  //   //     return await User.findByIdAndUpdate(context.user._id, args, { new: true });
-  //   //   }
+    //   throw AuthenticationError;
+    // },
+    // // Resolver for updating user information if authenticated
+    // updateUser: async (parent, args, context) => {
+    //   if (context.user) {
+    //     return await User.findByIdAndUpdate(context.user._id, args, { new: true });
+    //   }
 
-  //   //   throw AuthenticationError;
-  //   // },
+    //   throw AuthenticationError;
+    // },
 
-  //   // // Resolver for user login
-  //   // login: async (parent, { email, password }) => {
-  //   //   const user = await User.findOne({ email });
+    // Resolver for user login
+    login: async (parent, { email, password }) => {
+      const user = await User.findOne({ email });
 
-  //   //   if (!user) {
-  //   //     throw AuthenticationError;
-  //   //   }
+      if (!user) {
+        throw AuthenticationError;
+      }
 
-  //   //   const correctPw = await user.isCorrectPassword(password);
+      const correctPw = await user.isCorrectPassword(password);
 
-  //   //   if (!correctPw) {
-  //   //     throw AuthenticationError;
-  //   //   }
+      if (!correctPw) {
+        throw AuthenticationError;
+      }
 
-  //   //   const token = signToken(user);
+      const token = signToken(user);
 
-  //   //   return { token, user };
-  //   // }
-  // }
+      return { token, user };
+    }
+  }
 };
 
 // Export the resolvers for use in the GraphQL schema
