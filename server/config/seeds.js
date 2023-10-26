@@ -1,12 +1,13 @@
 const db = require("./connection");
-const { User, Vinyl, Genre } = require("../models");
+const { User, Vinyl } = require("../models");
 const cleanDB = require("./cleanDB");
 
 db.once("open", async () => {
-  await cleanDB("Genre", "genres");
+  //await cleanDB("Genre", "genres");
   await cleanDB("Vinyl", "vinyls");
   await cleanDB("User", "users");
 
+  /*
   const genres = await Genre.insertMany([
     { name: "Rock" },
     { name: "Metal" },
@@ -18,9 +19,27 @@ db.once("open", async () => {
     { name: "Reggae" },
     { name: "Electronic" },
     { name: "Classical" },
-  ]);
+  ]);*/
 
-  console.log("genres seeded");
+
+  const users = await User.insertMany([
+    {
+      firstName: "John",
+      lastName: "Doe",
+      email: "john@testmail.com",
+      password: "password12345",
+      listings: []
+    },
+    {
+      firstName: "Jane",
+      lastName: "Doe",
+      email: "jane@testmail.com",
+      password: "password12345",
+      listings: []
+    }
+  ])
+
+  console.log("users seeded");
 
   const vinyls = await Vinyl.insertMany([
     {
@@ -33,8 +52,8 @@ db.once("open", async () => {
       price: 53.99,
       trackList:
         "1. Yellow Submarine, 2. Only A Northern Song, 3. All Together Now, 4. Hey Bulldog, 5. It's All Too Much, 6. All You Need Is Love, 7. Pepperland, 8. Sea Of Time, 9. Sea Of Holes, 10. Sea Of Monsters, 11. March Of The Meanies, 12. Pepperland Laid Waste, 13. Yellow Submarine In Pepperland",
-      genre: genres[0]._id,
-      listingDate: "10/10/2023",
+      genre: "Rock",
+      //listingDate: "10/10/2023",
     },
     {
       title: "MASTER OF PUPPETS (BATTERY BRICK LP)",
@@ -46,8 +65,8 @@ db.once("open", async () => {
       price: 88.99,
       trackList:
         "1. Battery, 2. Master Of Puppets, 3. The Thing That Should Not Be, 4. Welcome Home (Sanitarium), 5. Disposable Heroes, 6. Leper Messiah, 7. Orion, Damage Inc.",
-      genre: genres[1]._id,
-      listingDate: "01/10/2023",
+      genre: "Metal",
+      //listingDate: "01/10/2023",
     },
     {
       title: "MIDNIGHTS",
@@ -59,9 +78,11 @@ db.once("open", async () => {
       price: 59.99,
       trackList:
         "SIDE A 1. Lavender Haze, 2. Maroon, 3. Anti-Hero, 4. Snow On The Beach, 5. You're On Your Own, Kid, 6. Midnight Rain",
-      genre: genres[2]._id,
-      listingDate: "30/09/2023",
-    },
+      genre: "Pop",
+      //listingDate: "30/09/2023",
+    }
+  ]);
+  /*
     {
       title: "MARSHALL MATHERS",
       artist: "Eminem",
@@ -154,9 +175,8 @@ db.once("open", async () => {
       listingDate: "05/10/2023",
     },
   ]);
-
-  console.log("vinyls seeded");
-
+  */
+/*
   await User.create({
     firstName: "John",
     lastName: "Doe",
@@ -180,8 +200,7 @@ db.once("open", async () => {
       },
     ],
   });
-
-  console.log("users seeded");
-
+*/
+  console.log("vinyls seeded");
   process.exit();
 });

@@ -33,18 +33,17 @@ const vinylSchema =  new Schema({
         type: String
     },
     genre: {
-        type: Schema.Types.ObjectId,
-        ref: 'Genre',
+        type: String,
         required: true
     },
     sold: {
         type: Boolean,
         default: false
     },
-    listingDate: {
+    /*listingDate: {
         type: Date,
         default: Date.now
-    }
+    }*/
     });
 
 const Vinyl = mongoose.model('Vinyl', vinylSchema);
