@@ -1,11 +1,6 @@
 const typeDefs = `
 scalar Date
 
-type Genre {
-    _id: ID
-    name: String
-  }
-
   type Vinyl {
     _id: ID
     title: String
@@ -15,7 +10,7 @@ type Genre {
     image: String
     price: Float
     tracklist: String
-    genre: Genre
+    genre: String
     sold: Boolean
     listingDate: Date
   }
@@ -51,15 +46,23 @@ type Genre {
     image: String
     price: Float
     tracklist: String
+    genre: String
     sold: Boolean
     listingDate: Date
   }
 
   type Query {
-    genres: [Genre]
+    vinylsByGenre(genreName: String): [Vinyl]
+    allVinyls: [Vinyl]
+    vinyl(_id: ID): Vinyl
   }
 
 
 `;
+//     checkout(vinyls: [VinylInput]): Checkout
 //maybe add update functionality to mutations
+//    user: User
+//order:(_id: ID!): Order
+
+
 module.exports = typeDefs;

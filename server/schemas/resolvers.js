@@ -1,4 +1,5 @@
 // Import required modules and models
+const { get } = require('mongoose');
 const { User, Vinyl, Genre, Order } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
@@ -29,10 +30,39 @@ const resolverMap = {
 const resolvers = {
   Query: {
     // Resolver for fetching all genres
-    genres: async () => {
-      return await Genre.find();
-    },
     // Resolver for fetching vinyls with optional filtering by genre and name
+    vinylsByGenre: async (parent, { genreName }) => {
+      const params = {};
+
+      // TODO: error handle if genre is missing
+
+
+      return await Vinyl.find({
+        genre: genreName
+      }).populate('genre');
+    },
+
+    allVinyls: async () => {
+      return await Vinyl.find();
+    },
+
+    vinyl: async (parent, { _id }) => {
+      return await Vinyl.findById(_id);
+    },
+    /*
+
+    checkout: async (parent, { vinyls }) => {
+      return null;
+    },
+
+    order: async (parent, { _id }) => {
+      return null;
+    },
+
+    User: async (parent, { _id }) => {
+      return null;
+    }
+    */
     // vinyls: async (parent, { genre, name }) => {
     //   const params = {};
 

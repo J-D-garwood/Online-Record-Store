@@ -3,7 +3,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx';
-// import Homepage from './pages/Homepage';
+import Homepage from './pages/Homepage';
 // import Detail from './pages/Detail';
 // import AddListing from './pages/AddListing';
 // import Login from './pages/Login';
@@ -15,29 +15,30 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
-        // error: <FourZeroFour />,
-        // children: [
-        //     // {
-        //     //     index: true,
-        //     //     element: <Homepage />
-        //     // }// {
-        //     //     path: '/login',
-        //     //     element: <Login />
-        //     // }, {
-        //     //     path: '/signup',
-        //     //     element: <Signup />
-        //     // }, {
-        //     //     path: '/success',
-        //     //     element: <Success />
-        //     // }, {
-        //     //     path: '/addlisting',
-        //     //     element: <AddListing/>
-        //     // },
-        //     // {
-        //     //     path: '/vinyls/:id',
-        //     //     element: <Detail />
-        //     // }
-        // ]
+        ///error: <FourZeroFour />,
+        children: [
+            {
+                index: true,
+                element: <Homepage />
+            }
+            // {
+            //     path: '/login',
+            //     element: <Login />
+            // }, {
+            //     path: '/signup',
+            //     element: <Signup />
+            // }, {
+            //     path: '/success',
+            //     element: <Success />
+            // }, {
+            //     path: '/addlisting',
+            //     element: <AddListing/>
+            // },
+            // {
+            //     path: '/vinyls/:id',
+            //     element: <Detail />
+            // }
+        ]
     }
 ]);
 
