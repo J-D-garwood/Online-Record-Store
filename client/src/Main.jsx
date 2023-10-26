@@ -6,8 +6,8 @@ import App from './App.jsx';
 import Homepage from './pages/Homepage';
 // import Detail from './pages/Detail';
 // import AddListing from './pages/AddListing';
-// import Login from './pages/Login';
-// import Signup from './pages/Signup';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 // import Success from './pages/Success';
 // import FourZeroFour from './pages/404';
 
@@ -20,14 +20,14 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Homepage />
-            }
-            // {
-            //     path: '/login',
-            //     element: <Login />
-            // }, {
-            //     path: '/signup',
-            //     element: <Signup />
-            // }, {
+            },
+            {
+                path: '/login',
+                element: <Login />
+            }, {
+                  path: '/signup',
+                  element: <Signup />
+            },// {
             //     path: '/success',
             //     element: <Success />
             // }, {

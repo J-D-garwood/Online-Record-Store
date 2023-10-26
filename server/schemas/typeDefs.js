@@ -55,8 +55,13 @@ scalar Date
     vinylsByGenre(genreName: String): [Vinyl]
     allVinyls: [Vinyl]
     vinyl(_id: ID): Vinyl
+    user: User
   }
 
+  type Mutation {
+    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+  }
 
 `;
 //     checkout(vinyls: [VinylInput]): Checkout
