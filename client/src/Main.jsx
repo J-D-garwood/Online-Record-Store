@@ -8,14 +8,14 @@ import Homepage from "./pages/Homepage";
 // import AddListing from './pages/AddListing';
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-// import Success from './pages/Success';
-// import FourZeroFour from './pages/404';
+import Success from './pages/Success';
+import FourZeroFour from './pages/404';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    ///error: <FourZeroFour />,
+    error: <FourZeroFour />,
     children: [
       {
         index: true,
@@ -29,10 +29,10 @@ const router = createBrowserRouter([
         path: "/signup",
         element: <Signup />,
       },
-    //   {
-    //     path: "/success",
-    //     element: <Success />,
-    //   },
+      {
+        path: "/success",
+        element: <Success />,
+      },
       //     path: '/addlisting',
       //     element: <AddListing/>
       //  },
