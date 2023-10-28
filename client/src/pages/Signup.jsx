@@ -32,15 +32,57 @@ function Signup(props) {
 
   return (
     <div className="signupPage">
-      <div className="signupPage__background"></div>
-      <img className="signupPage__logo" src="./images/vinyl-logo.jpg" alt="logo"></img>
-      <button className="signupPage__button">Sign In</button>
-      <div className="signupPage__gradient"></div>
+      
+        <img
+          className="signupPage__logo"
+          src="./images/vinyl-addict-logo.png"
+          alt="logo"
+        ></img>
+        <Link to="/login">
+          <button className="signupPage__button">Sign In</button>
+        </Link>
+        <div className="signupPage__gradient" />
+      
       <div className="signupPage__body">
         <>
-        <h1> Unlimited vinyls, artists, genres and more.</h1>
-        <h2>Buy and sell all of your favorite vinyls</h2>
-        <h3>Ready to start? Enter your details to sign up and get full access</h3>
+          <h1> Welcome to VinylAddict - Your Ultimate Vinyl Marketplace!</h1>
+          <h2>Discover, Buy, and Sell Your Favorite Vinyl Records</h2>
+          <h3>
+          Join VinylAddict now and experience the joy of vinyl in a whole new way
+          </h3>
+          <div className="signupPage__input">
+            <form onSubmit={handleFormSubmit}>
+              <input
+                placeholder="First Name"
+                name="firstName"
+                type="firstName"
+                id="firstName"
+                onChange={handleChange}
+              />
+              <input
+                placeholder="Last Name"
+                name="lastName"
+                type="lastName"
+                id="lastName"
+                onChange={handleChange}
+              />
+              <input
+                placeholder="Email"
+                name="email"
+                type="email"
+                id="email"
+                onChange={handleChange}
+              />
+              <input
+                placeholder="Password"
+                name="password"
+                type="password"
+                id="pwd"
+                onChange={handleChange}
+              />
+              <button className="signupPage__input__button">SIGN UP</button>
+            </form>
+          </div>
         </>
       </div>
     </div>
