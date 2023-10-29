@@ -1,3 +1,5 @@
-export default function CaroselItem(props) {
-    
-}
+function CaroselItem(vinyl) {
+    return vinyl   
+   }
+
+export default CaroselItem;
