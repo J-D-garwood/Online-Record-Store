@@ -33,6 +33,10 @@ const router = createBrowserRouter([
         path: "/success",
         element: <Success />,
       },
+      {
+        path: "/404",
+        element: <FourZeroFour />,
+      },
       //     path: '/addlisting',
       //     element: <AddListing/>
       //  },

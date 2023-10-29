@@ -38,25 +38,27 @@ export const QUERY_CHECKOUT = gql`
         }
     }
 `;
-/*
-export const QUERY_ALL_VINYLS =gql`
-    {
-        vinyls {
-            _id
-            title
-            artist
-            description
-            image
-            price
-            trackList
-            genre {
-              _id
-            }
-            sold
-            listingDate
-        }
-    }
-`;
+
+
+// export const QUERY_ALL_VINYLS =gql`
+//     {
+//         vinyls {
+//             _id
+//             title
+//             artist
+//             description
+//             image
+//             price
+//             trackList
+//             genre {
+//               _id
+//             }
+//             sold
+//             listingDate
+//         }
+//     }
+// `;
+
 
 export const QUERY_GENRES = gql`
     {
@@ -91,4 +93,4 @@ export const QUERY_USER =gql`
             }
         } 
     }
-`*/
+`
