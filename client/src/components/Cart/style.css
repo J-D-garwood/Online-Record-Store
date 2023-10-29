@@ -2,10 +2,11 @@
   position: fixed;
   top: 0;
   right: 0;
-  min-width: 20%;
-  max-width: 30%;
+  min-width: 30%;
+  max-width: 40%;
   max-height: 60%;
-  background-color: var(--light);
+  /* background-color: var(--light); */
+  background-color: white;
   overflow: auto;
   padding: 0.5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
@@ -14,10 +15,19 @@
 
 .cart h2 {
   font-size: 1.5rem;
+  text-decoration:solid;
   border-bottom: 1px solid var(--dark);
   padding-bottom: 0.5rem;
   margin: 1rem 0;
 }
+
+.cart h3 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--dark);
+  padding-bottom: 0.5rem;
+  margin: 1rem 0;
+}
+
 
 .cart .close {
   position: absolute;
