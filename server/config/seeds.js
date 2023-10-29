@@ -46,7 +46,7 @@ db.once("open", async () => {
       user: users[0]._id,
       description:
         "Yellow Submarine was the tenth studio album by the Beatles, originally released on 13 January 1969 in the United States and on 17 January 1969 in the United Kingdom.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 53.99,
       tracklist:
         "1. Yellow Submarine, 2. Only A Northern Song, 3. All Together Now, 4. Hey Bulldog, 5. It's All Too Much, 6. All You Need Is Love, 7. Pepperland, 8. Sea Of Time, 9. Sea Of Holes, 10. Sea Of Monsters, 11. March Of The Meanies, 12. Pepperland Laid Waste, 13. Yellow Submarine In Pepperland",
@@ -59,7 +59,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "UMR/Mercury are pressing 11 of Metallica's studio album back catalogue on custom coloured vinyl for the first time for World ex North America.",
-      // image: "cookie-tin.jpg",
+        image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 88.99,
       tracklist:
         "1. Battery, 2. Master Of Puppets, 3. The Thing That Should Not Be, 4. Welcome Home (Sanitarium), 5. Disposable Heroes, 6. Leper Messiah, 7. Orion, Damage Inc.",
@@ -72,7 +72,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "13 Songs, Unique moonstone blue marbled color disc, Collectible album sleeve (each side features a different full-size photo of Taylor), Full-size gatefold photo",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 59.99,
       tracklist:
         "SIDE A 1. Lavender Haze, 2. Maroon, 3. Anti-Hero, 4. Snow On The Beach, 5. You're On Your Own, Kid, 6. Midnight Rain",
@@ -85,7 +85,7 @@ db.once("open", async () => {
       user: users[0]._id,
       description:
         "The Marshall Mathers LP is Eminem's third album released in 2000 and produced by Dr Dre and Eminem.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 59.99,
       tracklist:
         "1. Public Service Announcement 2000, 2. Kill You, 3. Stan, 4. Paul Skit), 5. Who Knew, 6. Steve Berman",
@@ -98,7 +98,7 @@ db.once("open", async () => {
       user: users[0]._id,
       description:
         "Five-time Grammy® award winning and multi-platinum selling icon, Shania Twain, announces her new album, Queen Of Me, out February 3, 2023 on Republic Nashville, a division of Republic Records.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 57.99,
       tracklist:
         "1. Giddy Up!, 2. Brand New, 3. Waking Up Dreaming, 4. Best Friend, 5. Pretty Liar, 6. Inhale/Exhale Air",
@@ -111,7 +111,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "In Between Dreams is the third album by singer-songwriter Jack Johnson, originally released by Brushfire Records on March 1, 2005.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 51.99,
       tracklist:
         "1. Better Together, 2. Never Know, 3. Banana Pancakes, 4. Good People, 5. No Other Way, 6. Sitting, Waiting, Wishing, 7. Staple It Together, 8. Situations, 9. Crying Shame, 10. If I Could, 11. Breakdown, 12. Belle, 13. Do You Remember, 14. Constellations",
@@ -124,7 +124,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "Norah Jones’ seventh solo studio album grew out of her acclaimed singles series, as the unreleased songs unexpectedly congealed into an album of tremendous depth and beauty.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 24.99,
       tracklist:
         "1. How I Weep, 2. Flame Twin, 3. Hurts To Be Alone, 4. Heartbroken, Day After, 5. Say No More, 6. This Life, 7. To Live, 8. I’m Alive, 9. Were You Watching?, 10. Stumble On My Way, 11. Heaven Above",
@@ -137,7 +137,7 @@ db.once("open", async () => {
       user: users[0]._id,
       description:
         "Legend, Bob Marley’s posthumously released hits collection, was originally issued on Tuff Gong in 1984. It features 14 of Bob Marley’s most popular singles",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 51.99,
       tracklist:
         "1. Is This Love, 2. No Woman No Cry (Live), 3. Could You Be Loved, 4. Three Little Birds, 5. Buffalo Soldier, 6. Get Up Stand Up, Stir It Up",
@@ -150,7 +150,7 @@ db.once("open", async () => {
       user: users[0]._id,
       description:
         "Beastie Boys Music features 20 Beastie Boys classics spanning the band’s 30+ year career",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 59.99,
       tracklist:
         "1. So What’cha Want, 2. Paul Revere, 3. Shake Your Rump, 4. Make Some Noise, 5. Sure Shot, 6. Intergalactic, 7. Ch-Check It Out",
@@ -163,7 +163,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "The Gurrumul Story is the first ever anthology of the nine time ARIA award-winner’s most enduring and popular songs.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 39.99,
       tracklist:
         "1. Wiyathul, 2. Bapa, 3. Marwurrumburr, 4. Gurrumul History, 5. Maralitja (A Tribute To Yothu Yindi), 6. Bayini (feat. Sarah Blasko)",
@@ -176,7 +176,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "The multi-platinum follow up to Music Of The Sun, A Girl Like Me includes Rihanna’s first number one single, \"SOS,\" and the hit \"Unfaithful.\" A Girl Like Me shows the early progression of Rihanna’s introspective writing, which would become a signature throughout her career. On color vinyl for the first time, the official artist version will come in a 2LP translucent sea glass vinyl.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 92.99,
       tracklist:
         `SIDE A
@@ -207,7 +207,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "17-11-70, first released in 1971, is the fifth official album release for Elton John, and his first live album. The recording was taken from a live radio broadcast on 17 November 1970, hence the album's title. According to John, a live album was never planned as a release. Recordings of the broadcast, however, were popular among bootleggers which, according to John's producer, Gus Dudgeon, eventually prompted the record label to release it as an album.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 37.99,
       tracklist:
         `SIDE A
@@ -228,7 +228,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "Lauv returns with his highly-anticipated second full-length album, All 4 Nothing, featuring “26” and lead single “All 4 Nothing (I’m So In Love).” For as much as he’s known for intriguing and inventive soundscapes, multi-Platinum chart-topping singer, songwriter, producer, and multi-instrumentalist Lauv asserts himself as a storyteller, first and foremost. His stories continue to enchant audiences everywhere by converting the magic around him into generational anthems. After amassing 11 billion streams, the next chapter of Lauv is sonically the most challenging and exciting yet.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 44.99,
       tracklist:
         `1. 26
@@ -253,7 +253,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "The history-making Dallas, Texas artist, Post Malone releases his second full-length album Beerbongs & Bentleys via Republic Records. The album includes an all star line-up of features including Swae Lee, Nicki Minaj, G-Eazy & YG.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 59.99,
       tracklist:
         `LP 1 - SIDE A
@@ -291,7 +291,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "Born to Die is the second studio album and major label debut by American singer-songwriter Lana Del Rey. It was released on January 27, 2012 by Interscope Records and Polydor Records. Del Rey collaborated with producers including Patrik Berger, Jeff Bhasker, Chris Braide, Emile Haynie, Justin Parker, Rick Nowels, Robopop and Al Shux to achieve her desired sound. Their efforts resulted in music that the album incorporated alternative pop, baroque pop, indie pop, and trip hop.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 54.99,
       tracklist:
         `LP 1 - SIDE A
@@ -325,7 +325,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "Broken By Desire To Be Heavenly Sent is the follow up to Lewis Capaldi’s hugely successful debut album Divinely Uninspired To A Hellish Extent which peaked at #7 on the ARIA Albums Chart and featured the hit singles \"Someone You Loved\" and \"Before You Go.\"",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 63.99,
       tracklist:
         "",
@@ -338,7 +338,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "Much has changed since Tame Impala first emerged with an EP of dusty home recordings in 2008. By and large Kevin Parker's approach to recording has not, though the sound coming out of his home studio has vastly expanded, as has the number of people anticipating the fruits of his labour.",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 49.99,
       tracklist:
         `LP - SIDE A
@@ -370,7 +370,7 @@ db.once("open", async () => {
       user: users[1]._id,
       description:
         "Brand new Kim Petras \"Feed the beast LP\".",
-      // image: "cookie-tin.jpg",
+      image: "../../client/public/images/uploads/yellow_sub.jpg",
       price: 70.0,
       tracklist:
         `SIDE A

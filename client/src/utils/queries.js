@@ -39,6 +39,7 @@ export const QUERY_CHECKOUT = gql`
     }
 `;
 
+
 // export const QUERY_ALL_VINYLS =gql`
 //     {
 //         vinyls {
@@ -57,6 +58,7 @@ export const QUERY_CHECKOUT = gql`
 //         }
 //     }
 // `;
+
 
 export const QUERY_GENRES = gql`
     {
