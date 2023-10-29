@@ -20,22 +20,19 @@ db.once("open", async () => {
   //   { name: "Classical" },
   // ]);
 
-  const users = await User.insertMany([
-    {
-      firstName: "John",
-      lastName: "Doe",
-      email: "john@testmail.com",
-      password: "password12345",
-      listings: [],
-    },
-    {
-      firstName: "Jane",
-      lastName: "Doe",
-      email: "jane@testmail.com",
-      password: "password12345",
-      listings: [],
-    },
-  ]);
+  const user1 = await User.create({
+    firstName: 'Pamela',
+    lastName: 'Washington',
+    email: 'pamela@testmail.com',
+    password: 'password12345',
+  });
+
+  const user2 = await User.create({
+    firstName: 'Elijah',
+    lastName: 'Holt',
+    email: 'eholt@testmail.com',
+    password: 'password12345'
+  });
 
   console.log("users seeded");
 
@@ -43,7 +40,7 @@ db.once("open", async () => {
     {
       title: "YELLOW SUBMARINE (LP)",
       artist: "The Beatles",
-      user: users[0]._id,
+      user: user1._id,
       description:
         "Yellow Submarine was the tenth studio album by the Beatles, originally released on 13 January 1969 in the United States and on 17 January 1969 in the United Kingdom.",
       image: "yellow_sub.jpg",
@@ -56,7 +53,7 @@ db.once("open", async () => {
     {
       title: "MASTER OF PUPPETS (BATTERY BRICK LP)",
       artist: "Metallica",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "UMR/Mercury are pressing 11 of Metallica's studio album back catalogue on custom coloured vinyl for the first time for World ex North America.",
         image: "yellow_sub.jpg",
@@ -69,7 +66,7 @@ db.once("open", async () => {
     {
       title: "MIDNIGHTS",
       artist: "Taylor Swift",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "13 Songs, Unique moonstone blue marbled color disc, Collectible album sleeve (each side features a different full-size photo of Taylor), Full-size gatefold photo",
       image: "yellow_sub.jpg",
@@ -82,7 +79,7 @@ db.once("open", async () => {
     {
       title: "MARSHALL MATHERS",
       artist: "Eminem",
-      user: users[0]._id,
+      user: user1._id,
       description:
         "The Marshall Mathers LP is Eminem's third album released in 2000 and produced by Dr Dre and Eminem.",
       image: "yellow_sub.jpg",
@@ -95,7 +92,7 @@ db.once("open", async () => {
     {
       title: "QUEEN OF ME (LP)",
       artist: "Shania Twain",
-      user: users[0]._id,
+      user: user1._id,
       description:
         "Five-time Grammy® award winning and multi-platinum selling icon, Shania Twain, announces her new album, Queen Of Me, out February 3, 2023 on Republic Nashville, a division of Republic Records.",
       image: "yellow_sub.jpg",
@@ -108,7 +105,7 @@ db.once("open", async () => {
     {
       title: "IN BETWEEN DREAMS (LP)",
       artist: "Jack Johnson",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "In Between Dreams is the third album by singer-songwriter Jack Johnson, originally released by Brushfire Records on March 1, 2005.",
       image: "yellow_sub.jpg",
@@ -121,7 +118,7 @@ db.once("open", async () => {
     {
       title: "PICK ME UP OFF THE FLOOR (LP)",
       artist: "norah Jones",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "Norah Jones’ seventh solo studio album grew out of her acclaimed singles series, as the unreleased songs unexpectedly congealed into an album of tremendous depth and beauty.",
       image: "yellow_sub.jpg",
@@ -134,7 +131,7 @@ db.once("open", async () => {
     {
       title: "LEGEND (BACK TO BLACK LP)",
       artist: "Bob Marley",
-      user: users[0]._id,
+      user: user1._id,
       description:
         "Legend, Bob Marley’s posthumously released hits collection, was originally issued on Tuff Gong in 1984. It features 14 of Bob Marley’s most popular singles",
       image: "yellow_sub.jpg",
@@ -147,7 +144,7 @@ db.once("open", async () => {
     {
       title: "BEASTIE BOYS MUSIC",
       artist: "Beastie Boys",
-      user: users[0]._id,
+      user: user1._id,
       description:
         "Beastie Boys Music features 20 Beastie Boys classics spanning the band’s 30+ year career",
       image: "yellow_sub.jpg",
@@ -160,7 +157,7 @@ db.once("open", async () => {
     {
       title: "THE GURRUMUL STORY (LP)",
       artist: "Gurrumul",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "The Gurrumul Story is the first ever anthology of the nine time ARIA award-winner’s most enduring and popular songs.",
       image: "yellow_sub.jpg",
@@ -173,7 +170,7 @@ db.once("open", async () => {
     {
       title: "A GIRL LIKE ME (TRANSLUCENT SEA GLASS 2LP)",
       artist: "Rihanna",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "The multi-platinum follow up to Music Of The Sun, A Girl Like Me includes Rihanna’s first number one single, \"SOS,\" and the hit \"Unfaithful.\" A Girl Like Me shows the early progression of Rihanna’s introspective writing, which would become a signature throughout her career. On color vinyl for the first time, the official artist version will come in a 2LP translucent sea glass vinyl.",
       image: "yellow_sub.jpg",
@@ -204,7 +201,7 @@ db.once("open", async () => {
     {
       title: "17-11-70 (LIMITED EDITION LP)",
       artist: "Elton John",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "17-11-70, first released in 1971, is the fifth official album release for Elton John, and his first live album. The recording was taken from a live radio broadcast on 17 November 1970, hence the album's title. According to John, a live album was never planned as a release. Recordings of the broadcast, however, were popular among bootleggers which, according to John's producer, Gus Dudgeon, eventually prompted the record label to release it as an album.",
       image: "yellow_sub.jpg",
@@ -225,7 +222,7 @@ db.once("open", async () => {
     {
       title: "ALL 4 NOTHING (LP)",
       artist: "Lauv",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "Lauv returns with his highly-anticipated second full-length album, All 4 Nothing, featuring “26” and lead single “All 4 Nothing (I’m So In Love).” For as much as he’s known for intriguing and inventive soundscapes, multi-Platinum chart-topping singer, songwriter, producer, and multi-instrumentalist Lauv asserts himself as a storyteller, first and foremost. His stories continue to enchant audiences everywhere by converting the magic around him into generational anthems. After amassing 11 billion streams, the next chapter of Lauv is sonically the most challenging and exciting yet.",
       image: "yellow_sub.jpg",
@@ -250,7 +247,7 @@ db.once("open", async () => {
     {
       title: "BEERBONGS AND BENTLEYS (2LP)",
       artist: "Post Malone",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "The history-making Dallas, Texas artist, Post Malone releases his second full-length album Beerbongs & Bentleys via Republic Records. The album includes an all star line-up of features including Swae Lee, Nicki Minaj, G-Eazy & YG.",
       image: "yellow_sub.jpg",
@@ -288,7 +285,7 @@ db.once("open", async () => {
     {
       title: "BORN TO DIE (2LP)",
       artist: "Lana Del Rey",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "Born to Die is the second studio album and major label debut by American singer-songwriter Lana Del Rey. It was released on January 27, 2012 by Interscope Records and Polydor Records. Del Rey collaborated with producers including Patrik Berger, Jeff Bhasker, Chris Braide, Emile Haynie, Justin Parker, Rick Nowels, Robopop and Al Shux to achieve her desired sound. Their efforts resulted in music that the album incorporated alternative pop, baroque pop, indie pop, and trip hop.",
       image: "yellow_sub.jpg",
@@ -322,7 +319,7 @@ db.once("open", async () => {
     {
       title: "BROKEN BY DESIRE TO BE HEAVENLY SENT (LP)",
       artist: "Lewis Capaldi",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "Broken By Desire To Be Heavenly Sent is the follow up to Lewis Capaldi’s hugely successful debut album Divinely Uninspired To A Hellish Extent which peaked at #7 on the ARIA Albums Chart and featured the hit singles \"Someone You Loved\" and \"Before You Go.\"",
       image: "yellow_sub.jpg",
@@ -335,7 +332,7 @@ db.once("open", async () => {
     {
       title: "CURRENTS (LP)",
       artist: "Tame Impala",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "Much has changed since Tame Impala first emerged with an EP of dusty home recordings in 2008. By and large Kevin Parker's approach to recording has not, though the sound coming out of his home studio has vastly expanded, as has the number of people anticipating the fruits of his labour.",
       image: "yellow_sub.jpg",
@@ -367,7 +364,7 @@ db.once("open", async () => {
     {
       title: "FEED THE BEAST (LP)",
       artist: "Kim Petras",
-      user: users[1]._id,
+      user: user2._id,
       description:
         "Brand new Kim Petras \"Feed the beast LP\".",
       image: "yellow_sub.jpg",
