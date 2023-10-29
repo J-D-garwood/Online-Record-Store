@@ -1,6 +1,6 @@
 //import NewReleases from "../components/NewReleases"
 //import Latest from "../components/Latest"
-//import Cart from "../components/Cart"
+import Cart from "../components/Cart"
 import GenreCarosel from "../components/GenreCarosel"
 
 /*
@@ -48,7 +48,7 @@ const Homepage = () => {
             <ul>
             {genres.map((genre, index) => <li key={index}><GenreCarosel genre={genre}/></li>)}
             </ul>
-            {/* <Cart /> */}
+            <Cart />
         </div>
     )
 };
