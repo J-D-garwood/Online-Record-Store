@@ -29,7 +29,7 @@ const Homepage = () => {
     // const { data: mostCommonGenreData} = useQuery(MOST_COMMON_GENRES);
     // const mostCommonGenre = data?.xxxxx || [];
 
-    const mostCommonGenre = [
+    const genres = [
         "Pop",
         "Classical",
         "Rock",
@@ -45,9 +45,9 @@ const Homepage = () => {
             <GenreCarosel genre={"Rock"} /> 
             <GenreCarosel genre={"Jazz"} />
             <GenreCarosel genre={"Metal"} /> */}
-            {mostCommonGenre.map((genre, index) => 
-                <GenreCarosel key={index} genre={genre} />
-            )}
+            <ul>
+            {genres.map((genre, index) => <li key={index}><GenreCarosel genre={genre}/></li>)}
+            </ul>
             {/* <Cart /> */}
         </div>
     )

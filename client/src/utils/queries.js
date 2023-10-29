@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 
-export const QUERY_VINYLS = gql`
-    query getVinyls($genre: ID) {
-        vinyls(genre: $genre) {
+/*export const QUERY_VINYLS_BY_GEN = gql`
+    query vinylsByGenre($genreName: String) {
+        vinylsByGenre(genreName: $genreName) {
             _id
             title
             artist
@@ -10,16 +10,27 @@ export const QUERY_VINYLS = gql`
             image
             price
             trackList
-            genre {
-              _id
-            }
+            genre
             sold
-            listingDate
+        }
+    }
+`;*/
+
+export const QUERY_ALL_VINYLS =gql`
+    {
+        allVinyls {
+            _id
+            title
+            artist
+            description
+            price
+            genre
+            sold
         }
     }
 `;
 
-
+/*
 export const QUERY_CHECKOUT = gql`
     query getCheckout($vinyls: [VinylInput]) {
         checkout(vinyls: $vinyls) {
@@ -80,4 +91,4 @@ export const QUERY_USER =gql`
             }
         } 
     }
-`
+`*/
