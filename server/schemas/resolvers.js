@@ -94,13 +94,16 @@ const resolvers = {
     // vinyl: async (parent, { _id }) => {
     //   return await vinyl.findById(_id).populate('genre');
     // },
-    // Resolver for fetching a user's data if authenticated
-    // user: async (parent, args, context) => {
-    //   if (context.user) {
-    //     const user = await User.findById(context.user._id).populate({
-    //       path: 'orders.vinyls',
-    //       populate: 'genre'
-    //     });
+// Resolver for fetching a user's data if authenticated
+user: async (parent, args, context) => {
+  if (context.user) {
+    const user = await User.findById(context.user._id)
+    };
+
+    user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
+
+    return user;
+  }
 
     //     user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
 
