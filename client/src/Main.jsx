@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
 import Homepage from "./pages/Homepage";
-// import Detail from './pages/Detail';
+import Detail from './pages/Detail';
 // import AddListing from './pages/AddListing';
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -40,10 +40,10 @@ const router = createBrowserRouter([
       //     path: '/addlisting',
       //     element: <AddListing/>
       //  },
-      // {
-      //     path: '/vinyls/:id',
-      //      element: <Detail />
-      // }
+       {
+           path: '/vinyls/:id',
+            element: <Detail />
+       }
     ],
   },
 ]);
