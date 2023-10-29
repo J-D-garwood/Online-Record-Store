@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useStoreContext } from '../../utils/GlobalState';
 import { QUERY_ALL_VINYLS } from "../../utils/queries";
 import { useQuery } from '@apollo/client';
-import { CaroselItem } from '../CaroselItem'
+import CaroselItem from '../CaroselItem'
 
 function GenreCarosel({ genre }) {
     const [state, dispatch] = useStoreContext();
