@@ -23,6 +23,7 @@ export const QUERY_ALL_VINYLS =gql`
             title
             artist
             description
+            image
             price
             genre
             sold
