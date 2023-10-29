@@ -45,9 +45,7 @@ const Homepage = () => {
             <GenreCarosel genre={"Rock"} /> 
             <GenreCarosel genre={"Jazz"} />
             <GenreCarosel genre={"Metal"} /> */}
-            <ul>
-            {genres.map((genre, index) => <li key={index}><GenreCarosel genre={genre}/></li>)}
-            </ul>
+            {genres.map((genre, index) => <div key={index}><GenreCarosel genre={genre}/></div>)}
             <Cart />
         </div>
     )

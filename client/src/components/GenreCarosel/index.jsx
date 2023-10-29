@@ -17,19 +17,17 @@ function GenreCarosel({ genre }) {
     if (!loading) {
         let vinyls = data.allVinyls
         const vinyls_filtered = vinyls.filter(vinyl => vinyl.genre==genre)
-
     ///let vinyls = data.allVinyls.filter(function (vinyl) {
      //   vinyl.genre==genre;
     //})    //const vinyls = data
         return (
             <div>
-            <div className="genre-row">
-            {vinyls_filtered.map((vinyl) => {
-                <div>
-                    <CaroselItem vinyl={vinyl}/>
-               </div>
-            }
-            )}
+            <h1>{genre}</h1>
+            <div className="scroll-container">
+                {vinyls_filtered.map(vinyl => {
+                    let vinyl_page_ref = '/vinyl/' + vinyl._id;
+                    return (<a href={vinyl_page_ref}><img id="carosel_img" src={vinyl.image} ></img></a>)
+                })}
             </div>
             </div>
             /*
@@ -42,6 +40,7 @@ function GenreCarosel({ genre }) {
             */
         );
     }
+
 }
 /*
 const data = {
