@@ -98,7 +98,8 @@ db.once("open", async () => {
         "2022 marks the 30th anniversary of Diesel’s first solo record, Hepfidelity. Featuring the singles Tip Of My Tongue, Man Alive and more, the record was a huge hit – reaching #1 on the ARIA charts and staying there for 4 weeks. To celebrate the momentous anniversary, Diesel has uncovered 10 unreleased tracks from the era that were recorded around the world. This turns the original 11-track record into a double album, which will be pressed in full on vinyl for the first time ever.",
       image: "hepfidelity-vinyl.webp",
       price: 52.99,
-      tracklist: "1. Man Alive\n2. Tip Of My Tongue\n3. Too Much Of A Good Thing\n4. One More Time\n5. Get Lucky\n6. There’s A Love\n7. Love Junk\n8. Come To Me\n9. Save A Little Lovin’\n10. Picture Of You\n11. One Thing After Another",
+      tracklist:
+        "1. Man Alive\n2. Tip Of My Tongue\n3. Too Much Of A Good Thing\n4. One More Time\n5. Get Lucky\n6. There’s A Love\n7. Love Junk\n8. Come To Me\n9. Save A Little Lovin’\n10. Picture Of You\n11. One Thing After Another",
       genre: "Rock",
       // listingDate: new Date("2023/10/10"),
     },
@@ -153,6 +154,79 @@ db.once("open", async () => {
       10. Too Far Gone?
       11. Room of Mirrors
       12. Inamorata`,
+      genre: "Rock",
+      // listingDate: new Date("2023/10/10"),
+    },
+    {
+      title: "HONK (3LP)",
+      artist: "The Rolling Stones",
+      user: user2._id,
+      description: `Honk features 36 essential Stones' tracks from 1971 to 2016's Blue & Lonesome with the deluxe also featuring 10 live tracks recorded at stadiums around the world. Honk showcases the band's remarkable run of hits. Taken from the band's imperial phase, Honk features "Happy," "Doo Doo Doo Doo Doo "Beast Of Burden" alongside later singles "Waiting On A Friend," "Undercover (Of The Night") , "Harlem Shuffle," "Rock And A Hard Place,"  "Love Is Strong," "Out Of Control," "Rough Justice" and "Just Your Fool".`,
+      image: "honk-vinyl.webp",
+      price: 59.99,
+      tracklist: `LP
+      1. Start Me Up
+      2. Brown Sugar
+      3. Rocks Off
+      4. Miss You
+      5. Tumbling Dice
+      6. Just Your Fool
+      7. Wild Horses
+      8. Fool To Cry
+      9. Angie
+      10. Beast Of Burden
+      11. Hot Stuff
+      12. It's Only Rock 'n' Roll (But I Like It)
+      13. Rock And A Hard Place
+      14. Doom And Gloom
+      15. Love Is Strong
+      16. Mixed Emotions
+      17. Don't Stop
+      18. Ride 'Em On Down
+      19. Bitch
+      20. Harlem Shuffle
+      21. Hate To See You Go
+      22. Rough Justice
+      23. Happy
+      24. Doo Doo Doo Doo Doo (Heartbreaker)
+      25. One More Shot
+      26. Respectable
+      27. You Got Me Rocking
+      28. Rain Fall Down
+      29. Dancing With Mr D
+      30. Undercover (Of The Night)
+      31. Emotional Rescue
+      32. Waiting On A Friend
+      33. Saint Of Me
+      34. Out Of Control
+      35. Streets Of Love
+      36. Out Of Tears`,
+      genre: "Rock",
+      // listingDate: new Date("2023/10/10"),
+    },
+    {
+      title: "SUNDOWNERS (BLUE LP)",
+      artist: "The Answer",
+      user: user2._id,
+      description: `British rock legends, The Answer, return after a seven year absence with their seventh full studio album, Sundowners. Produced by British rock producer Dan Weller (Enter Shikari/Bury Tomorrow), the new album is an exceptional record that is sure to be one of the rock albums of 2023. With more than 300,000 album sales in their catalogue, tours with AC/DC and The Rolling Stones, The Answer comeback will see feverish fan anticipation.
+
+        Due to the effect, each vinyl is unique and may look slightly different to the image shown.`,
+      image: "sundowners-vinyl.webp",
+      price: 48.99,
+      tracklist: `SIDE A
+      1. Sundowners
+      2. Blood Brother
+      3. California Rust
+      4. Want You To Love Me
+      5. Oh Cherry
+      6. No Salvation
+      
+      SIDE B
+      1. Cold Heart
+      2. All Together
+      3. Livin' On The Line
+      4. Get Back On It
+      5. Always Alright`,
       genre: "Rock",
       // listingDate: new Date("2023/10/10"),
     },
@@ -280,6 +354,63 @@ db.once("open", async () => {
       2. Nordlandihr
       3. Immortal
       4. Blashyrkh My Throne`,
+      genre: "Metal",
+      //listingDate: "01/10/2023",
+    },
+    {
+      title: "A TWIST IN THE MYTH (MINT GREEN 2LP)",
+      artist: "Blind Guardian",
+      user: user1._id,
+      description: `Blind Guardian A Twist In The Myth reissue will be released as a Mint Green 2LP​.
+
+        Due to the effect, each vinyl is unique and may look slightly different to the image shown.`,
+      image: "a-twist-in-the-myth-vinyl.webp",
+      price: 80.99,
+      tracklist: `SIDE A
+      1. This Will Never End
+      2. Otherland
+      3. Turn The Page
+      
+      SIDE B
+      1. Fly
+      2. Carry The Blessed Home
+      3. Another Stranger Me
+      
+      SIDE C
+      
+      1. Straight Through The Mirror
+      2. Lionheart
+      3. Skalds And Shadows
+      
+      SIDE D
+      1. The Edge
+      2. The New Order
+      3. Dead Sound Of Misery`,
+      genre: "Metal",
+      //listingDate: "01/10/2023",
+    },
+    {
+      title: "TRUE POWER (TRANSPARENT BLUE LP)",
+      artist: "I Prevail",
+      user: user1._id,
+      description: `Platinum-certified and twice Grammy-nominated Michigan rock quartet I Prevail are back with their third full length offering True Power via Fearless Record.`,
+      image: "true-power-vinyl.webp",
+      price: 54.99,
+      tracklist: `1. 0:00
+      2. There’s Fear In Letting Go
+      3. Body Bag
+      4. Self-Destruction
+      5. Bad Things
+      6. Fake
+      7. Judgement Day
+      8. FWYTYK
+      9. Deep End
+      10. Long Live The King
+      11. Choke
+      12. The Negative
+      13. Closure
+      14. Visceral
+      15. Doomed`,
       genre: "Metal",
       //listingDate: "01/10/2023",
     },
@@ -687,6 +818,76 @@ db.once("open", async () => {
       genre: "Hip Hop",
       // listingDate: "30/09/2023",
     },
+    {
+      title: "2001 (EXPLICIT 2LP)",
+      artist: "Dr. Dre",
+      user: user2._id,
+      description: `2001 is the second studio album by Dr. Dre. It was released on November 16, 1999, by Interscope Records as the follow-up to his 1992 debut album The Chronic. The record was produced primarily by Dr. Dre and Mel-Man, as well as Lord Finesse, and features several guest contributions from fellow rappers such as The D.O.C., Hittman, Snoop Dogg, Kurupt, Xzibit, Eminem, and Nate Dogg. 2001 exhibits an expansion on Dre’s debut G-funk sound and contains gangsta rap themes such as violence, promiscuity, drug use, street gangs, sex and crime.`,
+      image: "2001-vinyl.webp",
+      price: 74.99,
+      tracklist: `SIDE A
+      1. Lolo Intro (feat. Xzibit & Tray-Dee)
+      2. The Watcher
+      3. Fuck You (feat. Devin a/k/a The Dude & Snoop Dogg)
+      4. Still D.R.E. (feat. Snoop Dogg)
+      5. Big Ego's (feat. Hittman)
+      
+      SIDE B
+      1. Xxplosive (feat. Hittman, Kurupt, Nate Dogg & Six-Two
+      2. What's The Difference (feat. Eminem & Xzibit)
+      3. Bar One (feat. Traci Nelson, Ms. Roq & Eddie Griffin)
+      4. Light Speed (feat. Hittman)
+      5. Forgot About Dre (feat. Eminem)
+      6. The Next Episode (feat. Snoop Dogg)
+      
+      SIDE C
+      1. Let's Get High (feat. Hittman, Kurupt & Ms. Roq)
+      2. Bitch Niggaz (feat. Snoop Dogg, Hittman & Six-Two)
+      3. The Car Bomb (feat. Mel-Man & Charis Henry)
+      4. Murder Ink (feat. Hittman & Ms. Roq)
+      5. Ed-ucation (feat. Eddie Griffin)
+      6. Some L.A. Niggaz (feat. DeFari, Xzibit, Knoc-Turn'al, Time Bomb, King T, MC Ren & Koka)
+      7. Pause 4 Porno (feat. Jake Steed)
+      
+      SIDE D
+      1. Housewife (feat. Kurupt & Hittman)
+      2. Ackrite (feat. Hittman)
+      3. Bang Bang (feat. Knoc-Turn'al & Hittman)
+      4. The Message (feat. Mary J Blige & Rell)`,
+      genre: "Hip Hop",
+      // listingDate: "30/09/2023",
+    },
+    {
+      title: "REVIVAL (2LP)",
+      artist: "Eminem",
+      user: user2._id,
+      description: `Eminem's 9th studio album, Revival, contains the lead single "Walk On Water" featuring Beyonce.
+
+      The album also contains the songs "Untouchable" as well as "River" featuring guest artist Ed Sheeran. Other guest artists include Phresher, Alicia Keys, X Ambassadors, Skylar Grey, Kehlani, and P!nk.`,
+      image: "revival-vinyl.webp",
+      price: 64.99,
+      tracklist: `1. Walk On Water FT. Beyonce
+      2. Believe
+      3. Chloraseptic FT. Phresher
+      4. Untouchable
+      5. River FT. Ed Sheeran
+      6. Remind Me (intro)
+      7. Remind Me
+      8. Revival (interlude)
+      9. Like Home FT. Alicia Keys
+      10. Bad Husband FT. X Ambassadors
+      11. Tragic Endings FT. Skylar Grey
+      12. Framed
+      13. Nowhere Fast FT. Kehlani
+      14. Heat
+      15. Offended
+      16. Need Me FT. P!nk
+      17. In Your Head
+      18. Castle
+      19. Arose`,
+      genre: "Hip Hop",
+      // listingDate: "30/09/2023",
+    },
 
     // Country
 
@@ -760,8 +961,7 @@ db.once("open", async () => {
       title: "ACROSS THE SHEETS (LP)",
       artist: "Brett Young",
       user: user2._id,
-      description:
-        `Across The Sheets is a compilation of new and old, kicking off with Brett’s newest swoon-worthy single, “Dance With You.” The album also includes a fresh take on some familiar favorites, including a cover of the heartbreaking 1994 classic that inspired Brett to pursue a career in Country music, Tim McGraw’s “Don’t Take The Girl” and a re-record of one of the most beloved songs from his hit-filled self-titled debut album, “You Ain’t Here to Kiss Me.”`,
+      description: `Across The Sheets is a compilation of new and old, kicking off with Brett’s newest swoon-worthy single, “Dance With You.” The album also includes a fresh take on some familiar favorites, including a cover of the heartbreaking 1994 classic that inspired Brett to pursue a career in Country music, Tim McGraw’s “Don’t Take The Girl” and a re-record of one of the most beloved songs from his hit-filled self-titled debut album, “You Ain’t Here to Kiss Me.”`,
       image: "across-the-sheets-vinyl.webp",
       price: 64.99,
       tracklist: `1. Dance With You
@@ -779,8 +979,7 @@ db.once("open", async () => {
       title: "CENTER POINT ROAD (LP)",
       artist: "Thomas Rhett",
       user: user1._id,
-      description:
-       `Described by Forbes as a “talented performer, songwriter and all-around star,” Thomas Rhett released his fourth studio album CENTER POINT ROAD. The album’s lead single “Look What God Gave Her,” earned the highest chart debut of his career as Country radio’s most-added song following its release and television world premiere on Saturday Night Live.`,
+      description: `Described by Forbes as a “talented performer, songwriter and all-around star,” Thomas Rhett released his fourth studio album CENTER POINT ROAD. The album’s lead single “Look What God Gave Her,” earned the highest chart debut of his career as Country radio’s most-added song following its release and television world premiere on Saturday Night Live.`,
       image: "center-point-road-vinyl.webp",
       price: 37.99,
       tracklist: `1. Up
@@ -829,6 +1028,60 @@ db.once("open", async () => {
       6. Honey, I’m Home
       7. If You Wanna Touch Her, Ask!
       8. Rock This Country!`,
+      genre: "Country",
+      // listingDate: "10/10/2023",
+    },
+    {
+      title: "CALM YA FARM (BLACK AND WHITE MARBLE LP)",
+      artist: "The Murlocs",
+      user: user1._id,
+      description: `Due to the effect, each vinyl is unique and may look slightly different to the image shown.
+
+        The Murlocs had visions of creating a quintessential country-rock record when they began recording their 7th LP - a collection of sublimely mellowed-out songs inspired by iconic albums like Sweetheart of the Rodeo and Exile on Main St - but the record soon took on its own unruly character.
+        
+        Spiked with The Murlocs’ signature breed of sharply crafted garage-punk Calm Ya Farm twists country-rock convention into a free-flowing album fully in touch with the frenetic energy of modern life.`,
+      image: "calm-ya-farm-vinyl.webp",
+      price: 43.99,
+      tracklist: `SIDE A
+      1. Initiative
+      2. Common Sense Civilian
+      3. Russian Roulette
+      4. Superstitious Insights
+      5. Centennial Perspective
+      6. Queen Pinky
+      
+      SIDE B
+      1. Undone and Unashamed
+      2. Captain Cotton Mouth
+      3. Catfish
+      4. Smithereens
+      5. Forbidden Toad
+      6. Aletophyte`,
+      genre: "Country",
+      // listingDate: "10/10/2023",
+    },
+    {
+      title: "WHERE WE STARTED (LP)",
+      artist: "Thomas Rhett",
+      user: user1._id,
+      description: `Inspired by his return to the road, Thomas Rhett’s sixth studio LP Where We Started marks a similar return to his in-the-moment mix of tempo, transcendent romance and tip-of-the-spear sonic trailblazing, as Country’s resident good-life philosopher shakes away a year-plus of off-stage dust.`,
+      image: "where-we-started-vinyl.webp",
+      price: 37.99,
+      tracklist: `1. The Hill
+      2. Church Boots
+      3. Bass Pro Hat
+      4. Anything Cold
+      5. Angel
+      6. Half Of Me ft. Riley Green
+      7. Bring The Bar
+      8. Paradise
+      9. Death Row ft. Tyler Hubbard & Russell Dickerson
+      10. Mama’s Front Doors
+      11. Slow Down Summer
+      12. Simple As A Song
+      13. Us Someday
+      14. Somebody Like Me
+      15. Where We Started with Katy Perry`,
       genre: "Country",
       // listingDate: "10/10/2023",
     },
@@ -908,11 +1161,10 @@ db.once("open", async () => {
     password: "123456",
     orders: [
       {
-        vinyls: [vinyls[0]._id, vinyls[1]._id]
-      }
-    ]
+        vinyls: [vinyls[0]._id, vinyls[1]._id],
+      },
+    ],
   });
-
 
   // await User.create({
   //   firstName: "John",
