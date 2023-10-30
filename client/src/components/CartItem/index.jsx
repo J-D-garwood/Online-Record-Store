@@ -23,14 +23,14 @@ const CartItem = ({ item }) => {
       idbPromise("cart", "delete", { ...item });
     }
 
-    // else {
-    //   dispatch({
-    //     type: UPDATE_CART_QUANTITY,
-    //     _id: item._id,
-    //     purchaseQuantity: parseInt(value),
-    //   });
-    //   idbPromise("cart", "put", { ...item, purchaseQuantity: parseInt(value) });
-    // }
+    else {
+       dispatch({
+         type: UPDATE_CART_QUANTITY,
+         _id: item._id,
+         purchaseQuantity: parseInt(value),
+       });
+       idbPromise("cart", "put", { ...item, purchaseQuantity: parseInt(value) });
+     }
   };
 
   return (

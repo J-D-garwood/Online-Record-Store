@@ -444,123 +444,12 @@ db.once("open", async () => {
       //listingDate: "30/09/2023",
     },
     {
-      title: "A GIRL LIKE ME (TRANSLUCENT SEA GLASS 2LP)",
-      artist: "Rihanna",
-      user: user2._id,
-      description:
-        'The multi-platinum follow up to Music Of The Sun, A Girl Like Me includes Rihanna’s first number one single, "SOS," and the hit "Unfaithful." A Girl Like Me shows the early progression of Rihanna’s introspective writing, which would become a signature throughout her career. On color vinyl for the first time, the official artist version will come in a 2LP translucent sea glass vinyl.',
-      image: "yellow_sub.jpg",
-      price: 92.99,
-      tracklist: `SIDE A
-      1. SOS
-      2. Kisses Don't Lie
-      3. Unfaithful
-      
-      SIDE B
-      1. We Ride
-      2. Dem Haters
-      3. Final Goodbye
-      
-      SIDE C
-      1. Break It Off
-      2. Crazy Little Thing Called Love
-      3. Selfish Girl
-      
-      SIDE D
-      1. P.S. (I'm Still Not Over You)
-      2. A Girl Like Me
-      3. A Million Miles Away`,
-      genre: "Pop",
-      // listingDate: "05/10/2023",
-    },
-    {
-      title: "17-11-70 (LIMITED EDITION LP)",
-      artist: "Elton John",
-      user: user1._id,
-      description:
-        "17-11-70, first released in 1971, is the fifth official album release for Elton John, and his first live album. The recording was taken from a live radio broadcast on 17 November 1970, hence the album's title. According to John, a live album was never planned as a release. Recordings of the broadcast, however, were popular among bootleggers which, according to John's producer, Gus Dudgeon, eventually prompted the record label to release it as an album.",
-      image: "yellow_sub.jpg",
-      price: 37.99,
-      tracklist: `SIDE A
-        1. Take Me to the Pilot [Live / 2016 Remastered]
-        2. Honky Tonk Women [Live / 2016 Remastered]
-        3. Sixty Years on [Live / 2016 Remastered]
-         
-        SIDE B
-        1. Can I Put You on [Live / 2016 Remastered]
-        2. Bad Side of the Moon [Live / 2016 Remastered]
-        3. Burn Down the Mission (Including My Baby Left Me / Get Back) [Live / 2016 Remastered]`,
-      genre: "Pop",
-      // listingDate: "05/10/2023",
-    },
-    {
-      title: "ALL 4 NOTHING (LP)",
-      artist: "Lauv",
-      user: user2._id,
-      description:
-        "Lauv returns with his highly-anticipated second full-length album, All 4 Nothing, featuring “26” and lead single “All 4 Nothing (I’m So In Love).” For as much as he’s known for intriguing and inventive soundscapes, multi-Platinum chart-topping singer, songwriter, producer, and multi-instrumentalist Lauv asserts himself as a storyteller, first and foremost. His stories continue to enchant audiences everywhere by converting the magic around him into generational anthems. After amassing 11 billion streams, the next chapter of Lauv is sonically the most challenging and exciting yet.",
-      image: "yellow_sub.jpg",
-      price: 44.99,
-      tracklist: `1. 26
-        2. Stranger
-        3. Kids Are Born Stars
-        4. Molly In Mexico
-        5. All 4 Nothing (I’m So In Love)
-        6. Stay Together
-        7. Summer Nights
-        8. Time After Time
-        9. Hey Ari
-        10. Better Than This
-        11. Bad Trip
-        12. I Don’t Have A Problem
-        13. First Grade`,
-      genre: "Pop",
-      // listingDate: "05/10/2023",
-    },
-    {
-      title: "BEERBONGS AND BENTLEYS (2LP)",
-      artist: "Post Malone",
-      user: user1._id,
-      description:
-        "The history-making Dallas, Texas artist, Post Malone releases his second full-length album Beerbongs & Bentleys via Republic Records. The album includes an all star line-up of features including Swae Lee, Nicki Minaj, G-Eazy & YG.",
-      image: "yellow_sub.jpg",
-      price: 59.99,
-      tracklist: `LP 1 - SIDE A
-
-        1. Paranoid
-        2. Spoil My Night (feat. Swae Lee)
-        3. Rich & Sad
-        4. Zack and Codeine
-        5. Takin Shots
-        
-        LP 1 - SIDE B
-        1. rockstar (21 Savage)
-        2. Over Now
-        3. Psycho (feat. Ty Dolla $ign)
-        4. Better Now
-        5. Ball For Me (feat. Nicki Minaj)
-        
-         LP 2 - SIDE C
-        1. Otherside
-        2. Stay
-        3. Blame It On Me
-        4. Same Bitches (feat. G-Eazy & YG)
-        
-        LP 2 - SIDE D
-        1. Jonestown (Interlude)
-        2. 92 Explorer
-        3. Candy Paint
-        4. Sugar Wraith`,
-      genre: "Pop",
-      // listingDate: "05/10/2023",
-    },
-    {
       title: "BORN TO DIE (2LP)",
       artist: "Lana Del Rey",
       user: user2._id,
       description:
         "Born to Die is the second studio album and major label debut by American singer-songwriter Lana Del Rey. It was released on January 27, 2012 by Interscope Records and Polydor Records. Del Rey collaborated with producers including Patrik Berger, Jeff Bhasker, Chris Braide, Emile Haynie, Justin Parker, Rick Nowels, Robopop and Al Shux to achieve her desired sound. Their efforts resulted in music that the album incorporated alternative pop, baroque pop, indie pop, and trip hop.",
-      image: "yellow_sub.jpg",
+      image: "lana-del-rey-born-to-die-2lp.webp",
       price: 54.99,
       tracklist: `LP 1 - SIDE A
         1. Born To Die
@@ -593,7 +482,7 @@ db.once("open", async () => {
       user: user1._id,
       description:
         'Broken By Desire To Be Heavenly Sent is the follow up to Lewis Capaldi’s hugely successful debut album Divinely Uninspired To A Hellish Extent which peaked at #7 on the ARIA Albums Chart and featured the hit singles "Someone You Loved" and "Before You Go."',
-      image: "yellow_sub.jpg",
+      image: "Lewis-Capaldi-BBDTBHS-LP.webp",
       price: 63.99,
       tracklist: "",
       genre: "Pop",
@@ -630,37 +519,7 @@ db.once("open", async () => {
       genre: "Pop",
       // listingDate: "05/10/2023",
     },
-    {
-      title: "FEED THE BEAST (LP)",
-      artist: "Kim Petras",
-      user: user2._id,
-      description: 'Brand new Kim Petras "Feed the beast LP".',
-      image: "yellow_sub.jpg",
-      price: 70.0,
-      tracklist: `SIDE A
-        1. Feed The Beast
-        2. Alone ft. Nicki Minaj
-        3. King Of Hearts
-        4. Thousand Pieces
-        5. uhoh
-        6. Revelations
-        7. BAIT ft. BANKS
-        8. Sex Talk
-        
-        SIDE B
-        1. Hit It From The Back
-        2. Claws
-        3. Minute
-        4. Coconuts
-        5. Castle In The Sky
-        6. brr
-        7. Unholy (Bonus Track) (Sam Smith feat. Kim Petras)`,
-      genre: "Pop",
-      // listingDate: "05/10/2023",
-    },
-
     // Hip Hop
-
     {
       title: "MARSHALL MATHERS (2LP)",
       artist: "Eminem",
