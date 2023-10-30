@@ -22,34 +22,35 @@ function Nav() {
           );
         } else {
           return (
-            <ul className="flex-row">
-              <li className="mx-1">
+            <div className="flex-container">
+              <div id="nav-link">
                 <Link to="/signup">
                   Signup
                 </Link>
-              </li>
-              <li className="mx-1">
+              </div>
+              <div id="nav-link">
                 <Link to="/login">
                   Login
                 </Link>
-              </li>
-            </ul>
+              </div>
+            </div>
           );
         }
       }
     
       return (
-        <header className="flex-row px-1">
+        <header>
+          <div>
           <h1>
             <Link to="/">
               <span role="img" aria-label="VinylLogo">💿</span>
-              -VinylAddict
+               VinylAddict
             </Link>
           </h1>
-    
-          <nav>
+          </div>
+          <div>
             {showNavigation()}
-          </nav>
+          </div>
         </header>
       );
     }
