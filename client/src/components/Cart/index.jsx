@@ -43,7 +43,7 @@ console.log(data)
   function calculateTotal() {
     let sum = 0;
     state.cart.forEach((item) => {
-      sum += item.price * item.purchaseQuantity;
+      sum += item.price;
     });
     return sum.toFixed(2);
   }
