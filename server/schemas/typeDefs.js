@@ -56,11 +56,13 @@ scalar Date
     allVinyls: [Vinyl]
     vinyl(_id: ID): Vinyl
     user: User
+    checkout(vinyls: [VinylInput]): Checkout
   }
 
   type Mutation {
     addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
+    addOrder(vinyls: [ID]!): Order
   }
 
 `;
