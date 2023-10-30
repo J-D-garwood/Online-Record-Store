@@ -22,7 +22,7 @@ function GenreCarosel({ genre }) {
     //})    //const vinyls = data
         return (
             <div>
-            <h1>{genre}</h1>
+            <h1 id="genre-title">{genre}</h1>
             <div className="scroll-container">
                 {vinyls_filtered.map((vinyl, index) => {
                     let vinyl_page_ref = '/vinyls/' + vinyl._id;

@@ -39,11 +39,13 @@ const Homepage = () => {
     ]
 
     return(
+        <div id="homepage-div">
         <div className="container">
             {}
             {}
             {genres.map((genre, index) => <div key={index}><GenreCarosel genre={genre}/></div>)}
             <Cart />
+        </div>
         </div>
     )
 };
