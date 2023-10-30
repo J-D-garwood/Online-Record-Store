@@ -15,6 +15,8 @@ const Cart = () => {
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
+console.log(data)
+
   useEffect(() => {
     if (data) {
       stripePromise.then((res) => {
@@ -51,6 +53,7 @@ const Cart = () => {
       variables: {
         vinyls: [...state.cart],
       },
+      addTypename: false
     });
   }
 

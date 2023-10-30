@@ -88,7 +88,6 @@ export const QUERY_USER =gql`
                     tracklist
                     genre
                     sold
-                    listingDate
                 }
             }
         } 

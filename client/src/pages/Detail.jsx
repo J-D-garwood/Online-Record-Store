@@ -82,7 +82,12 @@ function Detail() {
                     </button>
                     <p>{currentVinyl.description}</p>
                     <h3>Tracklist</h3>
-                    <div>{currentVinyl.tracklist}</div>
+                    <div>{currentVinyl.tracklist?.split('\n').map(line => (
+                        <>
+                         <span>{line}</span>
+                         <br/>
+                        </>
+                    ))}</div>
                 </div>
             ) : null}
             <Cart />

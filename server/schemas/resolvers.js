@@ -76,13 +76,14 @@ const resolvers = {
         line_items.push({
           price_data: {
             currency: "usd",
-            vinyl_data: {
-              title: vinyl.title,
+            product_data: {
+              name: vinyl.title,
               description: vinyl.description,
               images: [`${url}/images/${vinyl.image}`],
             },
             unit_amount: vinyl.price * 100,
           },
+          quantity:1
         });
       }
 
