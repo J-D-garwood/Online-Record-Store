@@ -24,10 +24,10 @@ function GenreCarosel({ genre }) {
             <div>
             <h1>{genre}</h1>
             <div className="scroll-container">
-                {vinyls_filtered.map((vinyl) => {
+                {vinyls_filtered.map((vinyl, index) => {
                     let vinyl_page_ref = '/vinyls/' + vinyl._id;
                     let image_ref = `/images/${vinyl.image}`
-                    return (<a href={vinyl_page_ref}><img id="carosel_img" src={image_ref}></img></a>)
+                    return (<a key={index} href={vinyl_page_ref}><img id="carosel_img" src={image_ref}></img></a>)
                 })}
             </div>
             </div>
