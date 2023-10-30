@@ -71,7 +71,7 @@ body {
 .signupPage {
   position: relative;
   height: 100%;
-  background: url("./images/vinyl-background_04.jpg") center no-repeat;
+  background: url("../public/images/vinyl-background_04.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -167,7 +167,7 @@ body {
 /* 404 PAGE */
 
 .noMatch {
-  background-image: url("./images/404-error-page.jpg");
+  background-image: url("../public/images/404-error-page.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
@@ -179,7 +179,7 @@ body {
 /* SUCCESS PAGE */
 
 .successPage {
-  background-image: url("./images/vinyl-background_02.jpg");
+  background-image: url("../public/images/vinyl-background_02.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
