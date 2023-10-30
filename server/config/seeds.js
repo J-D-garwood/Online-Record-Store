@@ -98,17 +98,7 @@ db.once("open", async () => {
         "2022 marks the 30th anniversary of Diesel’s first solo record, Hepfidelity. Featuring the singles Tip Of My Tongue, Man Alive and more, the record was a huge hit – reaching #1 on the ARIA charts and staying there for 4 weeks. To celebrate the momentous anniversary, Diesel has uncovered 10 unreleased tracks from the era that were recorded around the world. This turns the original 11-track record into a double album, which will be pressed in full on vinyl for the first time ever.",
       image: "hepfidelity-vinyl.webp",
       price: 52.99,
-      tracklist: `1. Man Alive
-        2. Tip Of My Tongue
-        3. Too Much Of A Good Thing
-        4. One More Time
-        5. Get Lucky
-        6. There’s A Love
-        7. Love Junk
-        8. Come To Me
-        9. Save A Little Lovin’
-        10. Picture Of You
-        11. One Thing After Another`,
+      tracklist: "1. Man Alive\n2. Tip Of My Tongue\n3. Too Much Of A Good Thing\n4. One More Time\n5. Get Lucky\n6. There’s A Love\n7. Love Junk\n8. Come To Me\n9. Save A Little Lovin’\n10. Picture Of You\n11. One Thing After Another",
       genre: "Rock",
       // listingDate: new Date("2023/10/10"),
     },

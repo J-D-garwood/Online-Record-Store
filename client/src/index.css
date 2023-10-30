@@ -201,8 +201,12 @@ div.scroll-container img {
   }
 
 #carosel_img {
-    height: 100px;
+    height: 200px;
     width: 200px;
     object-fit: fill;
 }
 
+#details-image {
+    height: 200px;
+    width: 200px;
+}
