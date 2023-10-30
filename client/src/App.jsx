@@ -6,7 +6,7 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-
+import { removeTypenameFromVariables } from '@apollo/client/link/remove-typename';
 import Nav from './components/Nav';
 import { StoreProvider } from './utils/GlobalState';
 
@@ -24,8 +24,10 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
+const removeTypenameLink = removeTypenameFromVariables();
+
 const client = new ApolloClient({
-  link: authLink.concat(httpLink),
+  link: removeTypenameLink.concat(authLink).concat(httpLink),
   cache: new InMemoryCache(),
 });
 
