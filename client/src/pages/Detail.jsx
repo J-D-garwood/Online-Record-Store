@@ -17,6 +17,8 @@ function Detail() {
 
     const [currentVinyl, setCurrentVinyl] = useState({});
     console.log(currentVinyl.title);
+    console.log(currentVinyl.tracklist)
+    let image_ref = `/images/${currentVinyl.image}`
 
     const { loading, data } = useQuery(QUERY_ALL_VINYLS)
 
@@ -69,6 +71,8 @@ function Detail() {
             {currentVinyl && cart ? (
                 <div>
                     <h1>{currentVinyl.title}</h1>
+                    <img src={image_ref} id="details-image"></img>
+                    <h3>price: ${currentVinyl.price}</h3>
                     <button onClick={addToCart}>ADD TO CART</button>
                     <button
                     disabled={!cart.find((p) => p._id === currentVinyl._id)}
@@ -76,6 +80,9 @@ function Detail() {
                     >
                         REMOVE FROM CART
                     </button>
+                    <p>{currentVinyl.description}</p>
+                    <h3>Tracklist</h3>
+                    <div>{currentVinyl.tracklist}</div>
                 </div>
             ) : null}
             <Cart />

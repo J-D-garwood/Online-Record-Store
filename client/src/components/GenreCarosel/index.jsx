@@ -26,7 +26,8 @@ function GenreCarosel({ genre }) {
             <div className="scroll-container">
                 {vinyls_filtered.map((vinyl) => {
                     let vinyl_page_ref = '/vinyls/' + vinyl._id;
-                    return (<a href={vinyl_page_ref}><img id="carosel_img" src={vinyl.image} ></img></a>)
+                    let image_ref = `/images/${vinyl.image}`
+                    return (<a href={vinyl_page_ref}><img id="carosel_img" src={image_ref}></img></a>)
                 })}
             </div>
             </div>

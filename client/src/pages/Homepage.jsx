@@ -31,20 +31,15 @@ const Homepage = () => {
 
     const genres = [
         "Pop",
-        "Classical",
         "Rock",
-        "Jazz",
-        "Metal",
+        "Hip Hop",
+        "Country",
     ]
 
     return(
         <div className="container">
-            {/* <Latest /> */}
-            {/* <GenreCarosel genre={"Pop"} /> 
-            <GenreCarosel genre={"Classical"} /> 
-            <GenreCarosel genre={"Rock"} /> 
-            <GenreCarosel genre={"Jazz"} />
-            <GenreCarosel genre={"Metal"} /> */}
+            {}
+            {}
             {genres.map((genre, index) => <div key={index}><GenreCarosel genre={genre}/></div>)}
             <Cart />
         </div>

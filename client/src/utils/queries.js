@@ -25,6 +25,7 @@ export const QUERY_ALL_VINYLS =gql`
             description
             image
             price
+            tracklist
             genre
             sold
         }
