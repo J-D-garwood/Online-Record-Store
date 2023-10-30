@@ -34,6 +34,7 @@ const Homepage = () => {
         "Rock",
         "Hip Hop",
         "Country",
+        "Metal"
     ]
 
     return(
