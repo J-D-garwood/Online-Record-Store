@@ -52,19 +52,15 @@ export const ADD_ORDER = gql`
   mutation addOrder($vinyls: [ID]!) {
     addOrder(vinyls: $vinyls) {
         purchaseDate
-        user
         vinyls {
             _id
             title 
             artist
-            user 
             description
             tracklist
             image
             price
-            genre {
-              name
-            }
+            genre
         }
     }
   }`
