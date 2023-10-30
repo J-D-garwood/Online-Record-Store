@@ -1,12 +1,18 @@
 * {
   font-family: 'Courier New', Courier, monospace;
+  margin: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
 }
 
 /* LOGIN PAGE */
+header {
+  background-color: antiquewhite;
+  border: solid 1px black;
+}
 
 .signin {
   max-width: 300px;
@@ -199,6 +205,9 @@ div.scroll-container {
     padding: 10px;
   }
   
+  div.scroll-container::-webkit-scrollbar {
+    display: none;
+  }
 div.scroll-container img {
     padding: 10px;
   }
@@ -223,4 +232,25 @@ div.scroll-container img {
   color: black;
   text-decoration: none;
   padding-left: 20px;
+}
+
+#details-container {
+  background-image: url("../public/images/Vinyl_sparkle.avif");
+  color: white;
+  text-align: center;
+  border: black solid 1px;
+}
+
+#details-button {
+  color: black;
+  margin-bottom: 10px;
+}
+
+#homepage-div {
+  background-image: url("../public/images/homepage.jpg");
+}
+
+#genre-title {
+  color: white;
+  font-size:60px;
 }

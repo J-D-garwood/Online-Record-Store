@@ -69,17 +69,19 @@ function Detail() {
     return(
         <>  
             {currentVinyl && cart ? (
-                <div>
+                <div id="details-container">
                     <h1>{currentVinyl.title}</h1>
                     <img src={image_ref} id="details-image"></img>
                     <h3>price: ${currentVinyl.price}</h3>
-                    <button onClick={addToCart}>ADD TO CART</button>
+                    <button onClick={addToCart} id="details-button">ADD TO CART</button>
+                    {cart.find((p) => p._id === currentVinyl._id) ? 
                     <button
                     disabled={!cart.find((p) => p._id === currentVinyl._id)}
                     onClick={removeFromCart}
+                    id="details-button"
                     >
                         REMOVE FROM CART
-                    </button>
+                    </button> : null}
                     <p>{currentVinyl.description}</p>
                     <h3>Tracklist</h3>
                     <div>{currentVinyl.tracklist?.split('\n').map(line => (
