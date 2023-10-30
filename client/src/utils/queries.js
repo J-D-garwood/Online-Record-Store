@@ -85,10 +85,8 @@ export const QUERY_USER =gql`
                     description
                     image
                     price
-                    trackList
-                    genre {
-                    _id
-                    }
+                    tracklist
+                    genre
                     sold
                     listingDate
                 }

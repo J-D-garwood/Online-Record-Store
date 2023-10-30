@@ -901,6 +901,19 @@ db.once("open", async () => {
 
   console.log("vinyls seeded");
 
+  await User.create({
+    firstName: "Andrei",
+    lastName: "Wenceslau",
+    email: "andrei.ribeirow@gmail.com",
+    password: "123456",
+    orders: [
+      {
+        vinyls: [vinyls[0]._id, vinyls[1]._id]
+      }
+    ]
+  });
+
+
   // await User.create({
   //   firstName: "John",
   //   lastName: "Doe",

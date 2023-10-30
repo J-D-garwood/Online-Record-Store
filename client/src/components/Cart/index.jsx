@@ -49,7 +49,7 @@ const Cart = () => {
   function submitCheckout() {
     getCheckout({
       variables: {
-        products: [...state.cart],
+        vinyls: [...state.cart],
       },
     });
   }
