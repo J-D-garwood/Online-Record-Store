@@ -104,33 +104,25 @@ db.once("open", async () => {
       // listingDate: new Date("2023/10/10"),
     },
     {
-      title: "CURRENTS (LP)",
-      artist: "Tame Impala",
+      title: "ALL THIS LIFE (WHITE LP)",
+      artist: "Thundamentals",
       user: user1._id,
       description:
-        "Much has changed since Tame Impala first emerged with an EP of dusty home recordings in 2008. By and large Kevin Parker's approach to recording has not, though the sound coming out of his home studio has vastly expanded, as has the number of people anticipating the fruits of his labour.",
-      image: "currents-vinyl.webp",
-      price: 49.99,
-      tracklist: `LP - SIDE A
-      1. Let It Happen
-      2. Nangs
-      3. The Moment
-      
-      LP - SIDE B
-      1. Yes I'm Changing
-      2. Eventually
-      3. Gossip
-      
-      LP - SIDE C
-      1. The Less I Know The Better
-      2. Past Life
-      3. Disciples
-      4. Cause I'm A Man
-      
-      LP - SIDE D
-      1. Reality In Motion
-      2. Love/Paranoia
-      3. New Person, Same Old Mistakes`,
+        `With over a decade in the game, Thundamentals' journey has been one of triumph and growth. From selling out shows in all corners of the country racking up millions of streams worldwide and landing multiple platinum and gold singles, Tuka, Jeswon and Morgs have consistently pushed Thundamentals to new heights, standing tall as one of the most notable names in homegrown hip-hop.
+
+        All This Life represents a rise against adversity and a celebration of the goodness in life. Acting as a beacon of light in dark times, All This Life aims to leave listeners with a sense of hope and uplift them in times of uncertainty.`,
+      image: "all-this-life-vinyl.webp",
+      price: 44.99,
+      tracklist: `1. Lifted Up
+      2. Top Of The World
+      3. Suffering Fools
+      4. Save Me
+      5. Pablo
+      6. Open My Eyes
+      7. Way You Move
+      8. Pluto
+      9. Ten Toes Down
+      10. Good Thing`,
       genre: "Rock",
       // listingDate: new Date("2023/10/10"),
     },
@@ -162,7 +154,7 @@ db.once("open", async () => {
       artist: "The Rolling Stones",
       user: user2._id,
       description: `Honk features 36 essential Stones' tracks from 1971 to 2016's Blue & Lonesome with the deluxe also featuring 10 live tracks recorded at stadiums around the world. Honk showcases the band's remarkable run of hits. Taken from the band's imperial phase, Honk features "Happy," "Doo Doo Doo Doo Doo "Beast Of Burden" alongside later singles "Waiting On A Friend," "Undercover (Of The Night") , "Harlem Shuffle," "Rock And A Hard Place,"  "Love Is Strong," "Out Of Control," "Rough Justice" and "Just Your Fool".`,
-      image: "honk-vinyl.webp",
+      image: "honk-vinyl.jpg",
       price: 59.99,
       tracklist: `LP
       1. Start Me Up
@@ -494,7 +486,7 @@ db.once("open", async () => {
       user: user2._id,
       description:
         "Much has changed since Tame Impala first emerged with an EP of dusty home recordings in 2008. By and large Kevin Parker's approach to recording has not, though the sound coming out of his home studio has vastly expanded, as has the number of people anticipating the fruits of his labour.",
-      image: "yellow_sub.jpg",
+      image: "currents-vinyl.webp",
       price: 49.99,
       tracklist: `LP - SIDE A
         1. Let It Happen
@@ -516,6 +508,124 @@ db.once("open", async () => {
         1. Reality In Motion
         2. Love/Paranoia
         3. New Person, Same Old Mistakes`,
+      genre: "Pop",
+      // listingDate: "05/10/2023",
+    },
+    {
+      title: "DIAMONDS (2LP)",
+      artist: "Elton John",
+      user: user2._id,
+      description:
+        `Greatest Hits package celebrating 50 years of Elton John and Bernie Taupin's sensational songwriting partnership - the ultimate greatest hits collection!`,
+      image: "diamonds-vinyl.webp",
+      price: 71.99,
+      tracklist: `LP 1 - SIDE A
+      Your Song
+      Tiny Dancer
+      Rocket Man (I Think It's Going To Be A Long, Long Time)
+      Crocodile Rock
+      Daniel
+
+      LP 1 - SIDE B
+      Saturday Night's Alright (For Fighting)
+      Goodbye Yellow Brick Road
+      Candle In The Wind
+      Bennie And The Jets
+      Someone Saved My Life Tonight
+
+      LP 2 - SIDE C
+      Don't Go Breaking My Heart
+      Sorry Seems To Be The Hardest Word
+      Song For Guy [Single Edit]
+      Blue Eyes
+      I'm Still Standing
+      I Guess That's Why They Call It The Blues
+
+      LP 2 - SIDE D
+      Nikita
+      Sacrifice
+      Don't Let The Sun Go Down On Me [with George Michael]
+      Can You Feel The Love Tonight
+      Are You Ready For Love?`,
+      genre: "Pop",
+      // listingDate: "05/10/2023",
+    },
+    {
+      title: "LIVE AT GLASTONBURY 2007 (EXCLUSIVE CRYSTAL CLEAR 2LP)",
+      artist: "Amy Winehouse",
+      user: user2._id,
+      description:
+        `In celebration of the return of Glastonbury Festival in 2022 and the 15th anniversary of the performance, we are pleased to announce the release of Amy Winehouse’s 2007 Pyramid Stage set for the first time.
+
+        This performance on the Pyramid Stage was the first of two on the 22nd June 2007, Amy later went on to perform on the Jazz World Stage too.
+        
+        The artwork includes a foreword by Emily Eavis.`,
+      image: "live-at-glastonbury-vinyl.webp",
+      price: 59.99,
+      tracklist: `SIDE A
+      1. Addicted
+      2. Just Friends
+      3. Tears Dry on Their Own
+      4. He Can Only Hold Her
+      
+      SIDE B
+      5. Cherry
+      6. Back to Black
+      7. Wake Up Alone
+      8. Love Is a Losing Game
+      
+      SIDE C
+      9. Fuck Me Pumps
+      10. Cupid
+      11. Hey Little Rich Girl
+      12. Monkey Man
+      
+      SIDE D
+      13. You Know I'm No Good
+      14. Rehab
+      15. Me & Mr Jones
+      16. Valerie`,
+      genre: "Pop",
+      // listingDate: "05/10/2023",
+    },
+    {
+      title: "PRISM (EXCLUSIVE 10TH ANNIVERSARY EDITION PRISMATIC SPLATTER 2LP)",
+      artist: "Katy Perry",
+      user: user2._id,
+      description:
+        `PRISM 10th Anniversary Edition
+
+        The original album on “prismatic splatter” vinyl + 3 bonus tracks
+        Packaging features rainbow holofoil lettering
+        12 page Deluxe Photobook featuring the original album shoot + previously unseen imagery
+        Please note that each vinyl is unique and the colors may appear slightly different from the image displayed.
+        
+        Limited to 2 per customer.`,
+      image: "prism-vinyl.webp",
+      price: 89.99,
+      tracklist: `SIDE A
+      1. Roar
+      2. Legendary Lovers
+      3. Birthday
+      4. Walking On Air
+      
+      SIDE B
+      5. Unconditionally
+      6. Dark Horse (feat. Juicy J)
+      7. This Is How We Do
+      8. International Smile
+      
+      SIDE C
+      9. Ghost
+      10. Love Me
+      11. This Moment
+      12. Double Rainbow
+      
+      SIDE D
+      13. By the Grace Of God
+      14. Spiritual
+      15. It Takes Two
+      16. Choose Your Battles`,
       genre: "Pop",
       // listingDate: "05/10/2023",
     },
@@ -563,7 +673,7 @@ db.once("open", async () => {
       user: user1._id,
       description:
         "Ever since NWA came Straight Outta Compton wearing dark sunglasses and even darker scowls, the city known as the CPT has been seen as an exporter of all things violent, poor and well, ruthless. Even though he was born one year before that album and right in the middle of the Compton chaos, Top Dawg Entertainment/Aftermath Entertainment/Interscope Records recording artist Kendrick Lamar knows that he was in it, but he didn't become of it.",
-      image: "mgood-kid-vinyl.webp",
+      image: "good-kid-vinyl.webp",
       price: 54.99,
       tracklist: `LP 1
 
