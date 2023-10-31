@@ -39,7 +39,7 @@ const Homepage = () => {
     ]
 
     return(
-        <div id="homepage-div">
+        <div className="background-div">
         <div className="container">
             {}
             {}

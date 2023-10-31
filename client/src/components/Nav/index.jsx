@@ -55,7 +55,7 @@ function Nav() {
       return (
         <header>
           <div>
-          <h1>
+          <h1 className="Title">
             <Link to="/">
               <span role="img" aria-label="VinylLogo">💿</span>
                VinylAddict
