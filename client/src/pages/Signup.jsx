@@ -31,24 +31,23 @@ function Signup(props) {
   };
 
   return (
-
     <div className="background-div">
       <div className="signin">
         <form onSubmit={handleFormSubmit}>
-        <input
-                placeholder="First Name"
-                name="firstName"
-                type="firstName"
-                id="firstName"
-                onChange={handleChange}
-              />
-              <input
-                placeholder="Last Name"
-                name="lastName"
-                type="lastName"
-                id="lastName"
-                onChange={handleChange}
-              />
+          <input
+            placeholder="First Name"
+            name="firstName"
+            type="firstName"
+            id="firstName"
+            onChange={handleChange}
+          />
+          <input
+            placeholder="Last Name"
+            name="lastName"
+            type="lastName"
+            id="lastName"
+            onChange={handleChange}
+          />
           <input
             placeholder="Email"
             name="email"
@@ -65,56 +64,9 @@ function Signup(props) {
           />
 
           <button type="submit">SIGN UP</button>
-         
         </form>
       </div>
     </div>
-
-    // <div className="signupPage">
-      
-    //     <div className="signupPage__gradient" />
-      
-    //   <div className="signupPage__body">
-    //     <>
-
-    //       <div className="signupPage__input">
-    //         <form onSubmit={handleFormSubmit}>
-    //           <input
-    //             placeholder="First Name"
-    //             name="firstName"
-    //             type="firstName"
-    //             id="firstName"
-    //             onChange={handleChange}
-    //           />
-    //           <input
-    //             placeholder="Last Name"
-    //             name="lastName"
-    //             type="lastName"
-    //             id="lastName"
-    //             onChange={handleChange}
-    //           />
-    //           <input
-    //             placeholder="Email"
-    //             name="email"
-    //             type="email"
-    //             id="email"
-    //             onChange={handleChange}
-    //           />
-    //           <input
-    //             placeholder="Password"
-    //             name="password"
-    //             type="password"
-    //             id="pwd"
-    //             onChange={handleChange}
-    //           />
-    //           <button className="signupPage__input__button">SIGN UP</button>
-    //         </form>
-    //       </div>
-    //     </>
-    //   </div>
-    // </div>
-
-    
   );
 }
 

@@ -4,13 +4,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
 import Homepage from "./pages/Homepage";
-import Detail from './pages/Detail';
-// import AddListing from './pages/AddListing';
+import Detail from "./pages/Detail";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Success from './pages/Success';
-import FourZeroFour from './pages/404';
+import Success from "./pages/Success";
+import FourZeroFour from "./pages/404";
 
 const router = createBrowserRouter([
   {
@@ -42,13 +41,10 @@ const router = createBrowserRouter([
         path: "/profile",
         element: <Profile />,
       },
-      //     path: '/addlisting',
-      //     element: <AddListing/>
-      //  },
-       {
-           path: '/vinyls/:id',
-            element: <Detail />
-       }
+      {
+        path: "/vinyls/:id",
+        element: <Detail />,
+      },
     ],
   },
 ]);

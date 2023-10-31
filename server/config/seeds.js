@@ -3,22 +3,8 @@ const { User, Vinyl } = require("../models");
 const cleanDB = require("./cleanDB");
 
 db.once("open", async () => {
-  //await cleanDB("Genre", "genres");
   await cleanDB("Vinyl", "vinyls");
   await cleanDB("User", "users");
-
-  // const genres = await Genre.insertMany([
-  //   { name: "Rock" },
-  //   { name: "Metal" },
-  //   { name: "Pop" },
-  //   { name: "Hip Hop" },
-  //   { name: "Country" },
-  //   { name: "Folk" },
-  //   { name: "Jazz" },
-  //   { name: "Reggae" },
-  //   { name: "Electronic" },
-  //   { name: "Classical" },
-  // ]);
 
   const user1 = await User.create({
     firstName: "Pamela",
@@ -64,7 +50,6 @@ db.once("open", async () => {
         6. Pepperland Laid Waste
         7. Yellow Submarine In Pepperland`,
       genre: "Rock",
-      // listingDate: new Date("2023/10/10"),
     },
     {
       title: "THE HONEYMOON IS OVER (30TH ANNIVERSARY LP)",
@@ -88,7 +73,6 @@ db.once("open", async () => {
         12. Let's Lay Down Here & Make Love
         13. Blame It On The Moon`,
       genre: "Rock",
-      // listingDate: new Date("2023/10/10"),
     },
     {
       title: "HEPFIDELITY 30 (MILKY CLEAR WHITE LP)",
@@ -123,7 +107,6 @@ db.once("open", async () => {
         9. Power
         10. Piece Of You`,
       genre: "Rock",
-      // listingDate: new Date("2023/10/10"),
     },
     {
       title: "ALL THIS LIFE (WHITE LP)",
@@ -145,7 +128,6 @@ db.once("open", async () => {
       9. Ten Toes Down
       10. Good Thing`,
       genre: "Rock",
-      // listingDate: new Date("2023/10/10"),
     },
     {
       title: "72 SEASONS (EXCLUSIVE YELLOW 2LP)",
@@ -168,7 +150,6 @@ db.once("open", async () => {
       11. Room of Mirrors
       12. Inamorata`,
       genre: "Rock",
-      // listingDate: new Date("2023/10/10"),
     },
     {
       title: "HONK (3LP)",
@@ -215,7 +196,6 @@ db.once("open", async () => {
       35. Streets Of Love
       36. Out Of Tears`,
       genre: "Rock",
-      // listingDate: new Date("2023/10/10"),
     },
     {
       title: "SUNDOWNERS (BLUE LP)",
@@ -241,7 +221,6 @@ db.once("open", async () => {
       4. Get Back On It
       5. Always Alright`,
       genre: "Rock",
-      // listingDate: new Date("2023/10/10"),
     },
 
     // Metal
@@ -265,7 +244,6 @@ db.once("open", async () => {
         3. Orion
         4. Damage, Inc.`,
       genre: "Metal",
-      //listingDate: "01/10/2023",
     },
 
     {
@@ -290,7 +268,6 @@ db.once("open", async () => {
         3. Seek & Destroy
         4. Metal Militia`,
       genre: "Metal",
-      //listingDate: "01/10/2023",
     },
     {
       title: "… AND JUSTICE FOR ALL (DYERS GREEN 2LP)",
@@ -320,7 +297,6 @@ db.once("open", async () => {
       1. To Live Is To Die
       2. Dyers Eve`,
       genre: "Metal",
-      //listingDate: "01/10/2023",
     },
     {
       title: "IMPERA (EXCLUSIVE GREEN AND GOLD LP)",
@@ -346,7 +322,6 @@ db.once("open", async () => {
       5. Bite Of Passage
       6. Respite On The Spitalfields`,
       genre: "Metal",
-      //listingDate: "01/10/2023",
     },
     {
       title: "ZEIT (LP)",
@@ -368,7 +343,6 @@ db.once("open", async () => {
       3. Immortal
       4. Blashyrkh My Throne`,
       genre: "Metal",
-      //listingDate: "01/10/2023",
     },
     {
       title: "A TWIST IN THE MYTH (MINT GREEN 2LP)",
@@ -400,7 +374,6 @@ db.once("open", async () => {
       2. The New Order
       3. Dead Sound Of Misery`,
       genre: "Metal",
-      //listingDate: "01/10/2023",
     },
     {
       title: "TRUE POWER (TRANSPARENT BLUE LP)",
@@ -425,7 +398,6 @@ db.once("open", async () => {
       14. Visceral
       15. Doomed`,
       genre: "Metal",
-      //listingDate: "01/10/2023",
     },
 
     // Pop
@@ -454,7 +426,6 @@ db.once("open", async () => {
         6. Sweet Nothing
         7. Mastermind`,
       genre: "Pop",
-      //listingDate: "30/09/2023",
     },
     {
       title: "BORN TO DIE (2LP)",
@@ -487,7 +458,6 @@ db.once("open", async () => {
         2. Lolita
         3. Lucky Ones`,
       genre: "Pop",
-      // listingDate: "05/10/2023",
     },
     {
       title: "BROKEN BY DESIRE TO BE HEAVENLY SENT (LP)",
@@ -513,7 +483,6 @@ db.once("open", async () => {
       11. Miriam
       12. All A Dream`,
       genre: "Pop",
-      // listingDate: "05/10/2023",
     },
     {
       title: "CURRENTS (LP)",
@@ -544,7 +513,6 @@ db.once("open", async () => {
         2. Love/Paranoia
         3. New Person, Same Old Mistakes`,
       genre: "Pop",
-      // listingDate: "05/10/2023",
     },
     {
       title: "DIAMONDS (2LP)",
@@ -582,7 +550,6 @@ db.once("open", async () => {
       Can You Feel The Love Tonight
       Are You Ready For Love?`,
       genre: "Pop",
-      // listingDate: "05/10/2023",
     },
     {
       title: "LIVE AT GLASTONBURY 2007 (EXCLUSIVE CRYSTAL CLEAR 2LP)",
@@ -619,7 +586,6 @@ db.once("open", async () => {
       15. Me & Mr Jones
       16. Valerie`,
       genre: "Pop",
-      // listingDate: "05/10/2023",
     },
     {
       title:
@@ -660,7 +626,6 @@ db.once("open", async () => {
       15. It Takes Two
       16. Choose Your Battles`,
       genre: "Pop",
-      // listingDate: "05/10/2023",
     },
     // Hip Hop
     {
@@ -698,7 +663,6 @@ db.once("open", async () => {
        2. Under The Influence
        3. Criminal`,
       genre: "Hip Hop",
-      // listingDate: "30/09/2023",
     },
     {
       title: "GOOD KID, M.A.A.D CITY (2LP)",
@@ -728,7 +692,6 @@ db.once("open", async () => {
         6 Black Boy Fly
         7 Now Or Never`,
       genre: "Hip Hop",
-      // listingDate: "30/09/2023",
     },
     {
       title: "GELA (LIMITED EDITION ORANGE LP)",
@@ -755,7 +718,6 @@ db.once("open", async () => {
       13. Ain't Nobody Like You ft. Jerome Farah
       14. MYWD`,
       genre: "Hip Hop",
-      // listingDate: "30/09/2023",
     },
     {
       title: "CURTAIN CALL (2LP)",
@@ -782,7 +744,6 @@ db.once("open", async () => {
       16. When I'm Gone
       17. Stan [Live]`,
       genre: "Hip Hop",
-      // listingDate: "30/09/2023",
     },
     {
       title: "BEERBONGS AND BENTLEYS (2LP)",
@@ -818,7 +779,6 @@ db.once("open", async () => {
       3. Candy Paint
       4. Sugar Wraith`,
       genre: "Hip Hop",
-      // listingDate: "30/09/2023",
     },
     {
       title: "2001 (EXPLICIT 2LP)",
@@ -857,7 +817,6 @@ db.once("open", async () => {
       3. Bang Bang (feat. Knoc-Turn'al & Hittman)
       4. The Message (feat. Mary J Blige & Rell)`,
       genre: "Hip Hop",
-      // listingDate: "30/09/2023",
     },
     {
       title: "REVIVAL (2LP)",
@@ -888,7 +847,6 @@ db.once("open", async () => {
       18. Castle
       19. Arose`,
       genre: "Hip Hop",
-      // listingDate: "30/09/2023",
     },
 
     // Country
@@ -917,7 +875,6 @@ db.once("open", async () => {
         5. Not Just A Girl
         6. The Hardest Stone`,
       genre: "Country",
-      // listingDate: "10/10/2023",
     },
     {
       title: "20 NUMBER ONES (2LP)",
@@ -957,7 +914,6 @@ db.once("open", async () => {
         BONUS TRACK
         21. Angels (Don’t Always Have Wings)`,
       genre: "Country",
-      // listingDate: "10/10/2023",
     },
     {
       title: "ACROSS THE SHEETS (LP)",
@@ -975,7 +931,6 @@ db.once("open", async () => {
       7. You Aint Here to Kiss Me (2022)
       8. Don't Take the Girl`,
       genre: "Country",
-      // listingDate: "10/10/2023",
     },
     {
       title: "CENTER POINT ROAD (LP)",
@@ -1001,7 +956,6 @@ db.once("open", async () => {
       15. Dream You Never Had
       16. Almost`,
       genre: "Country",
-      // listingDate: "10/10/2023",
     },
     {
       title: "COME ON OVER (DIAMOND EDITION BLUE 2LP)",
@@ -1031,7 +985,6 @@ db.once("open", async () => {
       7. If You Wanna Touch Her, Ask!
       8. Rock This Country!`,
       genre: "Country",
-      // listingDate: "10/10/2023",
     },
     {
       title: "CALM YA FARM (BLACK AND WHITE MARBLE LP)",
@@ -1060,7 +1013,6 @@ db.once("open", async () => {
       5. Forbidden Toad
       6. Aletophyte`,
       genre: "Country",
-      // listingDate: "10/10/2023",
     },
     {
       title: "WHERE WE STARTED (LP)",
@@ -1085,73 +1037,7 @@ db.once("open", async () => {
       14. Somebody Like Me
       15. Where We Started with Katy Perry`,
       genre: "Country",
-      // listingDate: "10/10/2023",
     },
-    // {
-    //   title: "IN BETWEEN DREAMS (LP)",
-    //   artist: "Jack Johnson",
-    //   user: user2._id,
-    //   description:
-    //     "In Between Dreams is the third album by singer-songwriter Jack Johnson, originally released by Brushfire Records on March 1, 2005.",
-    //   image: "yellow_sub.jpg",
-    //   price: 51.99,
-    //   tracklist:
-    //     "1. Better Together, 2. Never Know, 3. Banana Pancakes, 4. Good People, 5. No Other Way, 6. Sitting, Waiting, Wishing, 7. Staple It Together, 8. Situations, 9. Crying Shame, 10. If I Could, 11. Breakdown, 12. Belle, 13. Do You Remember, 14. Constellations",
-    //   genre: "Folk",
-    //   // listingDate: "15/10/2023",
-    // },
-    // {
-    //   title: "PICK ME UP OFF THE FLOOR (LP)",
-    //   artist: "norah Jones",
-    //   user: user2._id,
-    //   description:
-    //     "Norah Jones’ seventh solo studio album grew out of her acclaimed singles series, as the unreleased songs unexpectedly congealed into an album of tremendous depth and beauty.",
-    //   image: "yellow_sub.jpg",
-    //   price: 24.99,
-    //   tracklist:
-    //     "1. How I Weep, 2. Flame Twin, 3. Hurts To Be Alone, 4. Heartbroken, Day After, 5. Say No More, 6. This Life, 7. To Live, 8. I’m Alive, 9. Were You Watching?, 10. Stumble On My Way, 11. Heaven Above",
-    //   genre: "Jazz",
-    //   // listingDate: "28/09/2023",
-    // },
-    // {
-    //   title: "LEGEND (BACK TO BLACK LP)",
-    //   artist: "Bob Marley",
-    //   user: user1._id,
-    //   description:
-    //     "Legend, Bob Marley’s posthumously released hits collection, was originally issued on Tuff Gong in 1984. It features 14 of Bob Marley’s most popular singles",
-    //   image: "yellow_sub.jpg",
-    //   price: 51.99,
-    //   tracklist:
-    //     "1. Is This Love, 2. No Woman No Cry (Live), 3. Could You Be Loved, 4. Three Little Birds, 5. Buffalo Soldier, 6. Get Up Stand Up, Stir It Up",
-    //   genre: "Reggae",
-    //   // listingDate: "28/09/2023",
-    // },
-    // {
-    //   title: "BEASTIE BOYS MUSIC",
-    //   artist: "Beastie Boys",
-    //   user: user1._id,
-    //   description:
-    //     "Beastie Boys Music features 20 Beastie Boys classics spanning the band’s 30+ year career",
-    //   image: "yellow_sub.jpg",
-    //   price: 59.99,
-    //   tracklist:
-    //     "1. So What’cha Want, 2. Paul Revere, 3. Shake Your Rump, 4. Make Some Noise, 5. Sure Shot, 6. Intergalactic, 7. Ch-Check It Out",
-    //   genre: "Electronic",
-    //   // listingDate: "21/10/2023",
-    // },
-    // {
-    //   title: "THE GURRUMUL STORY (LP)",
-    //   artist: "Gurrumul",
-    //   user: user2._id,
-    //   description:
-    //     "The Gurrumul Story is the first ever anthology of the nine time ARIA award-winner’s most enduring and popular songs.",
-    //   image: "yellow_sub.jpg",
-    //   price: 39.99,
-    //   tracklist:
-    //     "1. Wiyathul, 2. Bapa, 3. Marwurrumburr, 4. Gurrumul History, 5. Maralitja (A Tribute To Yothu Yindi), 6. Bayini (feat. Sarah Blasko)",
-    //   genre: "Classical",
-    //   // listingDate: "05/10/2023",
-    // },
   ]);
 
   console.log("vinyls seeded");
@@ -1167,30 +1053,6 @@ db.once("open", async () => {
       },
     ],
   });
-
-  // await User.create({
-  //   firstName: "John",
-  //   lastName: "Doe",
-  //   email: "john@testmail.com",
-  //   password: "password12345",
-  //   listings: [
-  //     {
-  //       vinyls: [vinyls[0]._id],
-  //     },
-  //   ],
-  // });
-
-  // await User.create({
-  //   firstName: "Jane",
-  //   lastName: "Doe",
-  //   email: "jane@testmail.com",
-  //   password: "password12345",
-  //   listings: [
-  //     {
-  //       vinyls: [vinyls[0]._id],
-  //     },
-  //   ],
-  // });
 
   process.exit();
 });

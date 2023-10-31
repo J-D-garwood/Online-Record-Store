@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const LOGIN = gql`
   mutation login($email: String!, $password: String!) {
@@ -33,34 +33,53 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_VINYL = gql`
-  mutation addVinyl($title: String, $artist: String, $user: User, $description: String, $tracklist: String, $image: String, $price: Float, $genre: Genre) {
-    addVinyl(title: $title, artist: $artist, user: $user, description: $description, tracklist: $tracklist, image: $image, price: $price, genre: $genre) {
+  mutation addVinyl(
+    $title: String
+    $artist: String
+    $user: User
+    $description: String
+    $tracklist: String
+    $image: String
+    $price: Float
+    $genre: Genre
+  ) {
+    addVinyl(
+      title: $title
+      artist: $artist
+      user: $user
+      description: $description
+      tracklist: $tracklist
+      image: $image
+      price: $price
+      genre: $genre
+    ) {
+      _id
+      title
+      artist
+      user
+      description
+      tracklist
+      image
+      price
+      genre
+    }
+  }
+`;
+
+export const ADD_ORDER = gql`
+  mutation addOrder($vinyls: [ID]!) {
+    addOrder(vinyls: $vinyls) {
+      purchaseDate
+      vinyls {
         _id
-        title 
+        title
         artist
-        user 
         description
         tracklist
         image
         price
         genre
+      }
     }
   }
-`
-
-export const ADD_ORDER = gql`
-  mutation addOrder($vinyls: [ID]!) {
-    addOrder(vinyls: $vinyls) {
-        purchaseDate
-        vinyls {
-            _id
-            title 
-            artist
-            description
-            tracklist
-            image
-            price
-            genre
-        }
-    }
-  }`
+`;

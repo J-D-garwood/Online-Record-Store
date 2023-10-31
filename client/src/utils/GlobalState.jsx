@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer } from "react";
-import { reducer } from './reducers'
+import { reducer } from "./reducers";
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
@@ -9,7 +9,7 @@ const StoreProvider = ({ value = [], ...props }) => {
     vinyls: [],
     cart: [],
     cartOpen: false,
-    currentVinyl: '',
+    currentVinyl: "",
   });
 
   return <Provider value={[state, dispatch]} {...props} />;
