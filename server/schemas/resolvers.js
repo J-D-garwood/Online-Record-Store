@@ -1,4 +1,3 @@
-// Import required modules and models
 const { get } = require("mongoose");
 const { User, Vinyl, Genre, Order } = require("../models");
 const { signToken, AuthenticationError } = require("../utils/auth");
@@ -12,29 +11,24 @@ const resolverMap = {
     name: "Date",
     description: "Date custom scalar type",
     parseValue(value) {
-      return new Date(value); // value from the client
+      return new Date(value);
     },
     serialize(value) {
-      return value.getTime(); // value sent to the client
+      return value.getTime();
     },
     parseLiteral(ast) {
       if (ast.kind === Kind.INT) {
-        return parseInt(ast.value, 10); // ast value is always in string format
+        return parseInt(ast.value, 10);
       }
       return null;
     },
   }),
 };
 
-// Define resolvers for GraphQL queries and mutations
 const resolvers = {
   Query: {
-    // Resolver for fetching all genres
-    // Resolver for fetching vinyls with optional filtering by genre and name
     vinylsByGenre: async (parent, { genreName }) => {
       const params = {};
-
-      // TODO: error handle if genre is missing
 
       return await Vinyl.find({
         genre: genreName,
@@ -52,7 +46,7 @@ const resolvers = {
     user: async (parent, args, context) => {
       if (context.user) {
         const user = await User.findById(context.user._id).populate({
-          path: 'orders.vinyls',
+          path: "orders.vinyls",
         });
 
         user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
@@ -63,15 +57,12 @@ const resolvers = {
       throw AuthenticationError;
     },
 
-
-    // Resolver for creating a checkout session for purchasing vinyls
     checkout: async (parent, args, context) => {
       const url = new URL(context.headers.referer).origin;
       await Order.create({ vinyls: args.vinyls.map(({ _id }) => _id) });
-      // eslint-disable-next-line camelcase
+
       const line_items = [];
 
-      // eslint-disable-next-line no-restricted-syntax
       for (const vinyl of args.vinyls) {
         line_items.push({
           price_data: {
@@ -83,7 +74,7 @@ const resolvers = {
             },
             unit_amount: vinyl.price * 100,
           },
-          quantity:1
+          quantity: 1,
         });
       }
 
@@ -99,7 +90,6 @@ const resolvers = {
     },
   },
   Mutation: {
-    // Resolver for adding a new user
     addUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user);
@@ -139,5 +129,4 @@ const resolvers = {
   },
 };
 
-// Export the resolvers for use in the GraphQL schema
 module.exports = resolvers;

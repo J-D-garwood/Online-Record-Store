@@ -1,17 +1,17 @@
 // Import required modules and packages
-const { GraphQLError } = require('graphql');
-const jwt = require('jsonwebtoken');
+const { GraphQLError } = require("graphql");
+const jwt = require("jsonwebtoken");
 
 // Define a secret key for JWT and token expiration duration
-const secret = 'mysecretssshhhhhhh';
-const expiration = '2h';
+const secret = "mysecretssshhhhhhh";
+const expiration = "2h";
 
 // Exported object containing various utility functions and objects
 module.exports = {
   // Custom GraphQL error for authentication failures
-  AuthenticationError: new GraphQLError('Could not authenticate user.', {
+  AuthenticationError: new GraphQLError("Could not authenticate user.", {
     extensions: {
-      code: 'UNAUTHENTICATED',
+      code: "UNAUTHENTICATED",
     },
   }),
 
@@ -22,7 +22,7 @@ module.exports = {
 
     // Extract the token from the "Bearer" format if it's included in headers
     if (req.headers.authorization) {
-      token = token.split(' ').pop().trim();
+      token = token.split(" ").pop().trim();
     }
 
     // If no token is found, return the request object as-is
@@ -38,7 +38,7 @@ module.exports = {
       req.user = data;
     } catch {
       // Log an error message if the token is invalid
-      console.log('Invalid token');
+      console.log("Invalid token");
     }
 
     // Return the request object with or without user data

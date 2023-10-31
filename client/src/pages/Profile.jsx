@@ -1,11 +1,11 @@
-import PastPurchases from "../components/PastPurchases"
+import PastPurchases from "../components/PastPurchases";
 
 function Profile() {
-    return(
-        <div className="container">
-            <PastPurchases />
-        </div>
-    )
+  return (
+    <div className="container">
+      <PastPurchases />
+    </div>
+  );
 }
 
 export default Profile;

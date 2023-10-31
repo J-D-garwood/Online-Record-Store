@@ -21,16 +21,14 @@ const CartItem = ({ item }) => {
         _id: item._id,
       });
       idbPromise("cart", "delete", { ...item });
+    } else {
+      dispatch({
+        type: UPDATE_CART_QUANTITY,
+        _id: item._id,
+        purchaseQuantity: parseInt(value),
+      });
+      idbPromise("cart", "put", { ...item, purchaseQuantity: parseInt(value) });
     }
-
-    else {
-       dispatch({
-         type: UPDATE_CART_QUANTITY,
-         _id: item._id,
-         purchaseQuantity: parseInt(value),
-       });
-       idbPromise("cart", "put", { ...item, purchaseQuantity: parseInt(value) });
-     }
   };
 
   return (
@@ -41,17 +39,15 @@ const CartItem = ({ item }) => {
       <div>
         <div>
           {item.title}, ${item.price}
-        
-
           <span
             role="img"
             aria-label="trash"
             onClick={() => removeFromCart(item)}
             className="car-trash-icon"
           >
-          🗑️
+            🗑️
           </span>
-          </div>
+        </div>
       </div>
     </div>
   );

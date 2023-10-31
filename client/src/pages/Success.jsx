@@ -33,7 +33,7 @@ function Success() {
     <div className="successPage">
       <Jumbotron>
         <div className="successPage_title">
-        <h1>Thank you for your purchase!</h1>
+          <h1>Thank you for your purchase!</h1>
         </div>
       </Jumbotron>
     </div>

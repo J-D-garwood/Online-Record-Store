@@ -66,10 +66,5 @@ scalar Date
   }
 
 `;
-//     checkout(vinyls: [VinylInput]): Checkout
-//maybe add update functionality to mutations
-//    user: User
-//order:(_id: ID!): Order
-
 
 module.exports = typeDefs;
