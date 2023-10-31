@@ -98,8 +98,30 @@ db.once("open", async () => {
         "2022 marks the 30th anniversary of Diesel’s first solo record, Hepfidelity. Featuring the singles Tip Of My Tongue, Man Alive and more, the record was a huge hit – reaching #1 on the ARIA charts and staying there for 4 weeks. To celebrate the momentous anniversary, Diesel has uncovered 10 unreleased tracks from the era that were recorded around the world. This turns the original 11-track record into a double album, which will be pressed in full on vinyl for the first time ever.",
       image: "hepfidelity-vinyl.webp",
       price: 52.99,
-      tracklist:
-        "1. Man Alive\n2. Tip Of My Tongue\n3. Too Much Of A Good Thing\n4. One More Time\n5. Get Lucky\n6. There’s A Love\n7. Love Junk\n8. Come To Me\n9. Save A Little Lovin’\n10. Picture Of You\n11. One Thing After Another",
+      tracklist: `LP1 - Original Album
+        1. Man Alive
+        2. Tip Of My Tongue
+        3. Too Much Of A Good Thing
+        4. One More Time
+        5. Get Lucky
+        6. There’s A Love
+        7. Love Junk
+        8. Come To Me
+        9. Save A Little Lovin’
+        10. Picture Of You
+        11. One Thing After Another
+        
+        LP2 - New Album
+        1. Ride
+        2. By The Gun
+        3. Change
+        4. Mercurial Girl
+        5. Turned It All Around
+        6. Can We Get Closer
+        7. Heart Of Stone
+        8. What’s She Got
+        9. Power
+        10. Piece Of You`,
       genre: "Rock",
       // listingDate: new Date("2023/10/10"),
     },
@@ -107,8 +129,7 @@ db.once("open", async () => {
       title: "ALL THIS LIFE (WHITE LP)",
       artist: "Thundamentals",
       user: user1._id,
-      description:
-        `With over a decade in the game, Thundamentals' journey has been one of triumph and growth. From selling out shows in all corners of the country racking up millions of streams worldwide and landing multiple platinum and gold singles, Tuka, Jeswon and Morgs have consistently pushed Thundamentals to new heights, standing tall as one of the most notable names in homegrown hip-hop.
+      description: `With over a decade in the game, Thundamentals' journey has been one of triumph and growth. From selling out shows in all corners of the country racking up millions of streams worldwide and landing multiple platinum and gold singles, Tuka, Jeswon and Morgs have consistently pushed Thundamentals to new heights, standing tall as one of the most notable names in homegrown hip-hop.
 
         All This Life represents a rise against adversity and a celebration of the goodness in life. Acting as a beacon of light in dark times, All This Life aims to leave listeners with a sense of hope and uplift them in times of uncertainty.`,
       image: "all-this-life-vinyl.webp",
@@ -476,7 +497,21 @@ db.once("open", async () => {
         'Broken By Desire To Be Heavenly Sent is the follow up to Lewis Capaldi’s hugely successful debut album Divinely Uninspired To A Hellish Extent which peaked at #7 on the ARIA Albums Chart and featured the hit singles "Someone You Loved" and "Before You Go."',
       image: "Lewis-Capaldi-BBDTBHS-LP.webp",
       price: 63.99,
-      tracklist: "",
+      tracklist: `SIDE A
+      1. Good Morning
+      2. Say Goodbye
+      3. Little Broken Hearts
+      4. She's 22
+      5. Take it Back
+      6. After The Fall
+      
+      SIDE B
+      7. 4 Broken Hearts
+      8. Travelin' On
+      9. Out On The Road
+      10. Happy Pills
+      11. Miriam
+      12. All A Dream`,
       genre: "Pop",
       // listingDate: "05/10/2023",
     },
@@ -515,8 +550,7 @@ db.once("open", async () => {
       title: "DIAMONDS (2LP)",
       artist: "Elton John",
       user: user2._id,
-      description:
-        `Greatest Hits package celebrating 50 years of Elton John and Bernie Taupin's sensational songwriting partnership - the ultimate greatest hits collection!`,
+      description: `Greatest Hits package celebrating 50 years of Elton John and Bernie Taupin's sensational songwriting partnership - the ultimate greatest hits collection!`,
       image: "diamonds-vinyl.webp",
       price: 71.99,
       tracklist: `LP 1 - SIDE A
@@ -554,8 +588,7 @@ db.once("open", async () => {
       title: "LIVE AT GLASTONBURY 2007 (EXCLUSIVE CRYSTAL CLEAR 2LP)",
       artist: "Amy Winehouse",
       user: user2._id,
-      description:
-        `In celebration of the return of Glastonbury Festival in 2022 and the 15th anniversary of the performance, we are pleased to announce the release of Amy Winehouse’s 2007 Pyramid Stage set for the first time.
+      description: `In celebration of the return of Glastonbury Festival in 2022 and the 15th anniversary of the performance, we are pleased to announce the release of Amy Winehouse’s 2007 Pyramid Stage set for the first time.
 
         This performance on the Pyramid Stage was the first of two on the 22nd June 2007, Amy later went on to perform on the Jazz World Stage too.
         
@@ -589,11 +622,11 @@ db.once("open", async () => {
       // listingDate: "05/10/2023",
     },
     {
-      title: "PRISM (EXCLUSIVE 10TH ANNIVERSARY EDITION PRISMATIC SPLATTER 2LP)",
+      title:
+        "PRISM (EXCLUSIVE 10TH ANNIVERSARY EDITION PRISMATIC SPLATTER 2LP)",
       artist: "Katy Perry",
       user: user2._id,
-      description:
-        `PRISM 10th Anniversary Edition
+      description: `PRISM 10th Anniversary Edition
 
         The original album on “prismatic splatter” vinyl + 3 bonus tracks
         Packaging features rainbow holofoil lettering
