@@ -14,16 +14,35 @@ function PastPurchases() {
   
     return (
       <>
+        <div className="background-div">
         <div className="container my-1">
           <Link to="/">← Back to Homepage</Link>
   
           {user ? (
-            <>
+            <div className="PH_page">
               <h2>
                 Order History for {user.firstName} {user.lastName}
               </h2>
               {user.orders.map((order) => (
-                <div key={order._id} className="my-2">
+                <div>
+                <h3>
+                {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}
+                </h3>
+                <div className="purchase-history-container">
+                  {order.vinyls.map((vinyl, index) => {
+                      let vinyl_page_ref = '/vinyls/' + vinyl._id;
+                      let image_ref = `/images/${vinyl.image}`
+                      return (
+                          <div className="container-vinyl-item" key={index} >
+                      <a key={index} href={vinyl_page_ref}><img id="carosel_img" src={image_ref}></img></a>
+                      <h4>{vinyl.title}</h4>
+                      <h5>{vinyl.price}</h5>
+                      </div>
+                      )
+                  })}
+                </div>
+                </div>
+                /*<div key={order._id} className="my-2">
                   <h3>
                     {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}
                   </h3>
@@ -40,10 +59,11 @@ function PastPurchases() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </div>*/
               ))}
-            </>
+            </div>
           ) : null}
+        </div>
         </div>
       </>
     );
