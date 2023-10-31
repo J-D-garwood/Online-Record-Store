@@ -223,11 +223,8 @@ div.scroll-container {
     color: white;
 
 }
-h2.PH_page {
-  color: white;
-}
-h3.PH_page {
-  color: white;
+.PH_page {
+  color: #fff;
 }
   /* div.scroll-container::-webkit-scrollbar {
     display: none;
