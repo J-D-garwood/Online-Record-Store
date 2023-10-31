@@ -30,6 +30,7 @@ function GenreCarosel({ genre }) {
                     return (
                         <div className="container-vinyl-item" key={index} >
                     <a key={index} href={vinyl_page_ref}><img id="carosel_img" src={image_ref}></img></a>
+                    <h4>{vinyl.artist}</h4>
                     <h4>{vinyl.title}</h4>
                     <h5>{vinyl.price}</h5>
                     </div>
