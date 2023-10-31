@@ -1,7 +1,7 @@
 //import NewReleases from "../components/NewReleases"
 //import Latest from "../components/Latest"
-import Cart from "../components/Cart"
-import GenreCarosel from "../components/GenreCarosel"
+import Cart from "../components/Cart";
+import GenreCarosel from "../components/GenreCarosel";
 
 /*
 Option 1:
@@ -26,28 +26,25 @@ Cons:
 - Multiple reuqests
 */
 const Homepage = () => {
-    // const { data: mostCommonGenreData} = useQuery(MOST_COMMON_GENRES);
-    // const mostCommonGenre = data?.xxxxx || [];
+  // const { data: mostCommonGenreData} = useQuery(MOST_COMMON_GENRES);
+  // const mostCommonGenre = data?.xxxxx || [];
 
-    const genres = [
-        "Pop",
-        "Rock",
-        "Hip Hop",
-        "Metal",
-        "Country",
-        "Metal"
-    ]
+  const genres = ["Pop", "Rock", "Hip Hop", "Metal", "Country"];
 
-    return(
-        <div className="background-div">
-        <div className="container">
-            {}
-            {}
-            {genres.map((genre, index) => <div key={index}><GenreCarosel genre={genre}/></div>)}
-            <Cart />
-        </div>
-        </div>
-    )
+  return (
+    <div className="background-div">
+      <div className="container">
+        {}
+        {}
+        {genres.map((genre, index) => (
+          <div key={index}>
+            <GenreCarosel genre={genre} />
+          </div>
+        ))}
+        <Cart />
+      </div>
+    </div>
+  );
 };
 
 export default Homepage;
