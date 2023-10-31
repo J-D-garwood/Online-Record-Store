@@ -58,7 +58,7 @@ function Login(props) {
 
           <button type="submit">Sign in</button>
           <h4>
-            <span className="signin__gray">New to Vynil Store? </span>
+            <span className="signin__gray">New to Vynil Addict? </span>
             <span className="signin__link">
               <Link to="/signup">Sign up now</Link>
             </span>

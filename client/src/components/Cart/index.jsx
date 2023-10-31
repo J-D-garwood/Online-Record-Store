@@ -79,7 +79,7 @@ console.log(data)
             <CartItem key={item._id} item={item} />
           ))}
 
-          <div className="flex-row space-between">
+          <div className="flex-row space-between cart-total">
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (

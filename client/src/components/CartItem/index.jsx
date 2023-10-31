@@ -34,23 +34,24 @@ const CartItem = ({ item }) => {
   };
 
   return (
-    <div className="flex-row">
+    <div className="flex-row cart-item">
       <div>
         <img src={`/images/${item.image}`} alt="" />
       </div>
       <div>
         <div>
           {item.title}, ${item.price}
-        </div>
-        <div>
+        
+
           <span
             role="img"
             aria-label="trash"
             onClick={() => removeFromCart(item)}
+            className="car-trash-icon"
           >
-            🗑️
+          🗑️
           </span>
-        </div>
+          </div>
       </div>
     </div>
   );
