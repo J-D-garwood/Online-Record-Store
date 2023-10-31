@@ -8,19 +8,28 @@ body {
   padding: 0;
 }
 
+.Title{
+  font-size: 5.5rem;
+}
+
+.Title > a{
+  text-decoration: none;
+}
+
 /* LOGIN PAGE */
 header {
-  background-color: antiquewhite;
+  background-color: #f1f1f1;
   border: solid 1px black;
 }
 
 .signin {
-  max-width: 300px;
+  max-width: 400px;
   padding: 70px;
   margin-left: auto;
   margin-right: auto;
-  background: rgb(5, 5, 5);
+  /* background: rgb(5, 5, 5); */
   border-radius: 10px;
+  
 }
 
 .signin > h1 {
@@ -30,7 +39,7 @@ header {
 }
 
 .signin__gray {
-  color: grey;
+  color: rgb(202, 201, 201);
 }
 
 .signin__link:hover {
@@ -60,7 +69,7 @@ header {
 
 .signin > form > button {
   padding: 16px 20px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #fff;
   border-radius: 5px;
   background-color: #e50914;
@@ -233,6 +242,8 @@ div.scroll-container img {
   color: black;
   text-decoration: none;
   padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #details-container {
@@ -247,8 +258,12 @@ div.scroll-container img {
   margin-bottom: 10px;
 }
 
-#homepage-div {
-  background-image: url("../public/images/homepage.jpg");
+.background-div {
+  background-image: url("../public/images/vinyl-background_04.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
 }
 
 #genre-title {
