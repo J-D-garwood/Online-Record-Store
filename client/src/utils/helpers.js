@@ -1,16 +1,20 @@
+// Utility function to pluralize a name based on a count
 export function pluralize(name, count) {
   if (count === 1) {
-    return name;
+    return name; // Return the singular form of the name when count is 1
   }
-  return name + "s";
+  return name + "s"; // Return the plural form of the name for all other counts
 }
 
+// Utility function to interact with IndexedDB (a browser-based database)
 export function idbPromise(storeName, method, object) {
   return new Promise((resolve, reject) => {
     const request = window.indexedDB.open("shop-shop", 1);
     let db, tx, store;
     request.onupgradeneeded = function (e) {
       const db = request.result;
+
+      // Create object stores for "vinyls" and "cart" with a key path of "_id"
       db.createObjectStore("vinyls", { keyPath: "_id" });
       db.createObjectStore("cart", { keyPath: "_id" });
     };
@@ -30,17 +34,17 @@ export function idbPromise(storeName, method, object) {
 
       switch (method) {
         case "put":
-          store.put(object);
+          store.put(object); // Put the object into the store
           resolve(object);
           break;
         case "get":
-          const all = store.getAll();
+          const all = store.getAll(); // Retrieve all objects from the store
           all.onsuccess = function () {
             resolve(all.result);
           };
           break;
         case "delete":
-          store.delete(object._id);
+          store.delete(object._id); // Delete an object from the store by its ID
           break;
         default:
           console.log("No valid method");

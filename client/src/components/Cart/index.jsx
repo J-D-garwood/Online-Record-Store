@@ -1,3 +1,4 @@
+// Import necessary dependencies and components
 import { useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { useLazyQuery } from "@apollo/client";
@@ -9,12 +10,18 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import "./style.css";
 
+// Load the Stripe client library and provide your Stripe public key
 const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
+// Define the Cart component, which displays the shopping cart
 const Cart = () => {
+  // Access the global state and dispatch function from the context
   const [state, dispatch] = useStoreContext();
+
+  // Define a lazy query to get the checkout session data from the server
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
+  // Redirect to Stripe checkout when checkout data is available
   useEffect(() => {
     if (data) {
       stripePromise.then((res) => {
@@ -23,6 +30,7 @@ const Cart = () => {
     }
   }, [data]);
 
+  // Load the cart from IndexedDB if it's not already in the state
   useEffect(() => {
     async function getCart() {
       const cart = await idbPromise("cart", "get");
@@ -34,10 +42,12 @@ const Cart = () => {
     }
   }, [state.cart.length, dispatch]);
 
+  // Function to toggle the visibility of the cart
   function toggleCart() {
     dispatch({ type: TOGGLE_CART });
   }
 
+  // Calculate the total price of items in the cart
   function calculateTotal() {
     let sum = 0;
     state.cart.forEach((item) => {
@@ -46,6 +56,7 @@ const Cart = () => {
     return sum.toFixed(2);
   }
 
+  // Function to initiate the checkout process
   function submitCheckout() {
     getCheckout({
       variables: {
@@ -55,6 +66,7 @@ const Cart = () => {
     });
   }
 
+  // Render the Cart component
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
@@ -94,4 +106,5 @@ const Cart = () => {
   );
 };
 
+// Export the Cart component for use in other parts of the application
 export default Cart;
