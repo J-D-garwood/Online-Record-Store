@@ -27,7 +27,13 @@ function GenreCarosel({ genre }) {
                 {vinyls_filtered.map((vinyl, index) => {
                     let vinyl_page_ref = '/vinyls/' + vinyl._id;
                     let image_ref = `/images/${vinyl.image}`
-                    return (<a key={index} href={vinyl_page_ref}><img id="carosel_img" src={image_ref}></img></a>)
+                    return (
+                        <div className="container-vinyl-item" key={index} >
+                    <a key={index} href={vinyl_page_ref}><img id="carosel_img" src={image_ref}></img></a>
+                    <h4>{vinyl.title}</h4>
+                    <h5>{vinyl.price}</h5>
+                    </div>
+                    )
                 })}
             </div>
             </div>

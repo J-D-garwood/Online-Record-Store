@@ -213,11 +213,12 @@ div.scroll-container {
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
+    display: flex;
   }
   
-  div.scroll-container::-webkit-scrollbar {
+  /* div.scroll-container::-webkit-scrollbar {
     display: none;
-  }
+  } */
 div.scroll-container img {
     padding: 10px;
   }
@@ -269,4 +270,21 @@ div.scroll-container img {
 #genre-title {
   color: white;
   font-size:60px;
+}
+
+.cart-item{
+  border-bottom: 1px solid black;
+}
+
+.cart-total{
+  margin-top: 30px;
+}
+
+.car-trash-icon{
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.container-vinyl-item{
+  margin-right: 20px;
 }
