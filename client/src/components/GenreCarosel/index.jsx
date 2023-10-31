@@ -22,6 +22,7 @@ function GenreCarosel({ genre }) {
     //})    //const vinyls = data
         return (
             <div>
+
             <h1 id="genre-title">{genre}</h1>
             <div className="scroll-container">
                 {vinyls_filtered.map((vinyl, index) => {
@@ -37,6 +38,7 @@ function GenreCarosel({ genre }) {
                     )
                 })}
             </div>
+
             </div>
             /*
             <div>
